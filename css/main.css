@@ -1,0 +1,180 @@
+/*--GLOABLES--*/
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+}
+
+body.dark {
+  background-color: rgb(66, 65, 65);
+}
+
+/*-- PARTICIONES--*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+header .menu-icon {
+  font-size: 3rem;
+  margin: 15px;
+  cursor: pointer;
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+header .menu-atajos {
+  margin: 12px;
+  background-color: rgb(189, 189, 189);
+  width: 60%;
+  height: 3.5rem;
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+header .menu-atajos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
+  opacity: 1;
+  -webkit-transition: opacity 0.2 ease;
+  transition: opacity 0.2 ease;
+}
+header .menu-atajos ul li {
+  margin-top: 18px;
+  text-decoration: none;
+  padding: 2px 5px;
+}
+header .menu-atajos ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+header .menu-modos {
+  margin: 25px 5px;
+  width: auto;
+  height: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .menu-modos .moon {
+  font-size: 1.8rem;
+  -webkit-animation: float 1.2s linear infinite;
+          animation: float 1.2s linear infinite;
+}
+header .menu-leaguaje {
+  margin: 5px;
+}
+header .menu-leaguaje img {
+  width: 40px;
+  margin: 18px 50px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+/*--ESTILOS JS--*/
+.menu-atajos.active {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.menu-atajos.active ul {
+  width: 0%;
+  opacity: 0;
+}
+
+.menu-icon.girar {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/*--ANIMACIONES--*/
+@-webkit-keyframes float {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+/*--RESPONSIVE--*/
+@media screen and (max-width: 650px) {
+  header {
+    gap: 4rem;
+  }
+  header .menu-atajos {
+    position: absolute;
+    left: 5rem;
+    width: 75%;
+    height: 450px;
+    z-index: 1;
+    border-radius: 0;
+  }
+  header .menu-atajos ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+    margin: 40px 30px;
+  }
+  header .menu-atajos ul li {
+    margin: 0px 60px;
+  }
+  header .menu-atajos ul li a {
+    font-size: 1.4rem;
+  }
+  header .menu-modos {
+    margin: 20px 16px;
+    position: relative;
+    left: 5rem;
+  }
+  header .menu-modos .moon {
+    font-size: 1.7rem;
+  }
+  header .menu-leaguaje {
+    width: auto;
+    height: auto;
+  }
+  header .menu-leaguaje img {
+    margin: 15px 15px;
+  }
+}

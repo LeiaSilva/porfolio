@@ -1,0 +1,143 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+
+    .menu-icon {
+        font-size: 3rem;
+        margin: 15px;
+        cursor: pointer;
+        transform: rotateY(0);
+        transition: transform 1s ease;
+    }
+
+    .menu-atajos {
+        margin: 12px;
+        background-color: rgb(189, 189, 189);
+        width: 60%;
+        height: 3.5rem;
+        border-radius: 30px;
+        overflow: hidden;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 1s ease;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            opacity: 1;
+            transition: opacity 0.2 ease;
+
+            li {
+                margin-top: 18px;
+                text-decoration: none;
+                padding: 2px 5px;
+
+                a {
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .menu-modos {
+        margin: 25px 5px;
+        width: auto;
+        height: 2.5rem;
+        align-items: center;
+
+        .moon {
+            font-size: 1.8rem;
+            animation: float 1.2s linear infinite;
+        }
+    }
+
+    .menu-leaguaje {
+        margin: 5px;
+
+        img {
+            width: 40px;
+            margin: 18px 50px;
+            border-radius: 10px;
+            border-style: none;
+        }
+    }
+}
+
+/*--ESTILOS JS--*/
+.menu-atajos.active {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.menu-atajos.active ul {
+    width: 0%;
+    opacity: 0;
+}
+
+.menu-icon.girar {
+    transform: rotateY(180deg);
+}
+
+/*--ANIMACIONES--*/
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+/*--RESPONSIVE--*/
+@media screen and (max-width: 650px) {
+    header {
+        gap: 4rem;
+
+        .menu-atajos {
+            position: absolute;
+            left: 5rem;
+            width: 75%;
+            height: 450px;
+            z-index: 1;
+            border-radius: 0;
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+                margin: 40px 30px;
+                li{
+                    margin: 0px 60px;
+                    a{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+         .menu-modos{
+            margin: 20px 16px;
+            position: relative;
+            left: 5rem;
+            .moon{
+                font-size: 1.7rem;
+            }
+
+         }
+         .menu-leaguaje{
+            width: auto;
+            height: auto;
+            img{
+                margin: 15px 15px;
+            }
+         }
+    }
+
+
+
+
+}

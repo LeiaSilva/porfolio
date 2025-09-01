@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*--GLOABLES--*/
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+  background-color: white;
+}
+body.dark{
+  background-color: rgb(66, 65, 65)
+}
+/*-- PARTICIONES--*/
+@import "./header";
