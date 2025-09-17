@@ -40,8 +40,8 @@ header .menu-atajos {
   height: 3.5rem;
   border-radius: 30px;
   overflow: hidden;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: -webkit-transform 1s ease;
@@ -95,15 +95,10 @@ header .menu-leaguaje img {
 
 /*--ESTILOS JS--*/
 .menu-atajos.active {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
-}
-
-.menu-atajos.active ul {
-  width: 0%;
-  opacity: 0;
 }
 
 .menu-icon.girar {
@@ -176,5 +171,378 @@ header .menu-leaguaje img {
   }
   header .menu-leaguaje img {
     margin: 15px 15px;
+  }
+}
+.inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.inicio .inicio-container {
+  background-color: rgb(69, 135, 194);
+  width: 55%;
+  height: 550px;
+}
+.inicio .inicio-animacion {
+  background-color: rgb(124, 84, 129);
+  width: 55%;
+  height: 550px;
+}
+
+.inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.inicio .totoro {
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  margin-left: 10rem;
+  margin-top: 0rem;
+  -webkit-animation: float 3s ease-in-out infinite 900ms, entry 3s forwards;
+          animation: float 3s ease-in-out infinite 900ms, entry 3s forwards;
+}
+.inicio .totoro .ears-container {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translate(105%, 15%);
+          transform: translate(105%, 15%);
+}
+.inicio .totoro .ears-container .ear {
+  margin-top: 20px;
+  background-color: gray;
+  width: 35px;
+  height: 60px;
+  border-radius: 100% 100% 80% 80%;
+  -webkit-transform: translate(0, 30%);
+          transform: translate(0, 30%);
+}
+.inicio .totoro .ears-container .ear .ear-mark {
+  background-color: pink;
+  width: 15px;
+  height: 40px;
+  -webkit-transform: translate(60%, 20%);
+          transform: translate(60%, 20%);
+  border-radius: 100% 100% 100% 100%/90% 90% 90% 90%;
+  outline: pink;
+}
+.inicio .totoro .ears-support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100px;
+  height: 20px;
+  -webkit-transform: translate(105%, 35%);
+          transform: translate(105%, 35%);
+}
+.inicio .totoro .ears-support .support {
+  background-color: grey;
+  width: 8px;
+  height: 20px;
+  border-radius: 0 0 15% 15%;
+}
+.inicio .totoro .body-container {
+  width: 500px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.inicio .totoro .body-container .arm-left {
+  background: radial-gradient(circle at 50% 30%, #888 0%, #555 100%);
+  width: 30px;
+  height: 70px;
+}
+.inicio .totoro .body-container .body {
+  background: radial-gradient(circle at 50% 30%, #888 0%, #555 100%);
+  width: 250px;
+  height: 320px;
+  border-radius: 45% 45% 50% 50%/65% 65% 35% 35%;
+}
+.inicio .totoro .body-container .arm-right {
+  background: radial-gradient(circle at 50% 30%, #888 0%, #555 100%);
+  width: 30px;
+  height: 150px;
+  border-radius: 100% 100% 80% 80%;
+  -webkit-transform: translate(-2rem, 7rem);
+          transform: translate(-2rem, 7rem);
+  -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.inicio .totoro .body-container .arm-right .garras {
+  background-color: rgb(10, 10, 10);
+  width: 2px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0 1px;
+  -webkit-transform: translate(550%, 1380%);
+          transform: translate(550%, 1380%);
+}
+.inicio .totoro .body-container .arm-left {
+  background-color: grey;
+  width: 30px;
+  height: 150px;
+  border-radius: 100% 100% 80% 80%;
+  -webkit-transform: translate(2rem, 7rem);
+          transform: translate(2rem, 7rem);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 1rem;
+}
+.inicio .totoro .body-container .arm-left .garras {
+  background-color: rgb(10, 10, 10);
+  width: 2px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0 1px;
+  -webkit-transform: translate(550%, 1380%);
+          transform: translate(550%, 1380%);
+}
+.inicio .totoro .body-container .face-container {
+  width: 150px;
+  height: 60px;
+  -webkit-transform: translate(32%, 30%);
+          transform: translate(32%, 30%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+.inicio .totoro .body-container .face-container .eyes {
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  border-radius: 50%;
+}
+.inicio .totoro .body-container .face-container .eyes .eyes-pupil {
+  background-color: rgb(46, 46, 46);
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  border-radius: 50%;
+}
+.inicio .totoro .body-container .face-container .nose {
+  background-color: rgb(83, 83, 83);
+  width: 30px;
+  height: 15px;
+  -webkit-transform: translate(0, 150%);
+          transform: translate(0, 150%);
+  border-radius: 80%;
+  overflow: hidden;
+}
+.inicio .totoro .body-container .face-container .nose .nose-mark {
+  background-color: rgb(110, 108, 108);
+  width: 15px;
+  height: 5px;
+  -webkit-transform: translate(50%, 80%);
+          transform: translate(50%, 80%);
+  border-radius: 80%;
+}
+.inicio .totoro .body-container .body-fur {
+  background-color: bisque;
+  width: 200px;
+  height: 210px;
+  -webkit-transform: translate(12%, 10%);
+          transform: translate(12%, 10%);
+  border-radius: 45% 45% 50% 50%/65% 65% 35% 35%;
+}
+.inicio .totoro .body-container .body-fur .body-mark-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 15px;
+  -webkit-transform: translate(18%, 250%);
+          transform: translate(18%, 250%);
+  margin-bottom: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.inicio .totoro .body-container .body-fur .body-mark-container .mark {
+  background-color: rgb(116, 84, 65);
+  width: 30px;
+  height: 6px;
+  margin-top: 5px;
+  border-radius: 100% 100% 50% 50%/200% 200% 50% 50%;
+}
+.inicio .totoro .feet-container {
+  width: 150px;
+  height: 50px;
+  -webkit-transform: translate(55%, -200%);
+          transform: translate(55%, -200%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.inicio .totoro .feet-container .at-left {
+  background: radial-gradient(circle at 50% 30%, #888 0%, #555 100%);
+  width: 50px;
+  height: 20px;
+  border-radius: 50% 50% 30% 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.inicio .totoro .feet-container .at-left .garras {
+  background-color: rgb(10, 10, 10);
+  width: 3px;
+  height: 8px;
+  margin-top: 10px;
+  border-radius: 100%;
+}
+.inicio .totoro .feet-container .at-right {
+  background: radial-gradient(circle at 50% 30%, #888 0%, #555 100%);
+  width: 50px;
+  height: 20px;
+  border-radius: 50% 50% 30% 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.inicio .totoro .feet-container .at-right .garras {
+  background-color: rgb(10, 10, 10);
+  width: 3px;
+  height: 8px;
+  margin-top: 10px;
+  border-radius: 100%;
+}
+.inicio .shadow {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 220px;
+  height: 35px;
+  margin-left: 13rem;
+  border-radius: 100%;
+  -webkit-animation: shadowFloat 2s ease-in-out infinite 900ms, shadowEntry 3s forwards;
+          animation: shadowFloat 2s ease-in-out infinite 900ms, shadowEntry 3s forwards;
+}
+
+@-webkit-keyframes shadowFloat {
+  0%, 100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: scaleX(3px);
+            transform: scaleX(3px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes shadowFloat {
+  0%, 100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: scaleX(3px);
+            transform: scaleX(3px);
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes entry {
+  0% {
+    -webkit-transform: translateY(-140%) rotateX(5deg) scale(1.2);
+            transform: translateY(-140%) rotateX(5deg) scale(1.2);
+  }
+  50% {
+    -webkit-transform: translateY(8%) rotate(-3deg) scale(0.2);
+            transform: translateY(8%) rotate(-3deg) scale(0.2);
+  }
+  80% {
+    -webkit-transform: translateY(-5%) rotate(6deg) scale(0.9);
+            transform: translateY(-5%) rotate(6deg) scale(0.9);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0) scale(1);
+            transform: translateY(0) rotate(0) scale(1);
+  }
+}
+@keyframes entry {
+  0% {
+    -webkit-transform: translateY(-140%) rotateX(5deg) scale(1.2);
+            transform: translateY(-140%) rotateX(5deg) scale(1.2);
+  }
+  50% {
+    -webkit-transform: translateY(8%) rotate(-3deg) scale(0.2);
+            transform: translateY(8%) rotate(-3deg) scale(0.2);
+  }
+  80% {
+    -webkit-transform: translateY(-5%) rotate(6deg) scale(0.9);
+            transform: translateY(-5%) rotate(6deg) scale(0.9);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0) scale(1);
+            transform: translateY(0) rotate(0) scale(1);
+  }
+}
+@-webkit-keyframes shadowEntry {
+  0% {
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scaleX(1.15);
+            transform: scaleX(1.15);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-transform: scaleX(0.9);
+            transform: scaleX(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 0.8;
+  }
+}
+@keyframes shadowEntry {
+  0% {
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scaleX(1.15);
+            transform: scaleX(1.15);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-transform: scaleX(0.9);
+            transform: scaleX(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 0.8;
   }
 }

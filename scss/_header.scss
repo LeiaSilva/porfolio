@@ -17,7 +17,7 @@ header {
         height: 3.5rem;
         border-radius: 30px;
         overflow: hidden;
-        transform: scaleX(1);
+        transform: scaleX(0);
         transform-origin: left;
         transition: transform 1s ease;
 
@@ -68,13 +68,8 @@ header {
 
 /*--ESTILOS JS--*/
 .menu-atajos.active {
-    transform: scaleX(0);
+    transform: scaleX(1);
     transform-origin: left;
-}
-
-.menu-atajos.active ul {
-    width: 0%;
-    opacity: 0;
 }
 
 .menu-icon.girar {
