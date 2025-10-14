@@ -2,14 +2,113 @@
     display: flex;
 
     .inicio-container {
-        background-color: rgb(69, 135, 194);
         width: 55%;
         height: 550px;
+
+        .inicio-container-titulo {
+            width: 90%;
+            transform: translate(2rem, 4rem);
+
+            .inicio-container-titulo-nombre {
+                font-family: "Sour Gummy", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 4.5rem;
+                overflow: hidden;
+
+
+
+                .estilo-soy {
+                    font-family: "Sour Gummy", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 200;
+                    font-style: italic;
+                    font-size: 3rem;
+
+                    span {
+                        font-family: "Meow Script", cursive;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 5rem;
+                    }
+                }
+
+            }
+
+            //Frase dinamica
+            .frase {
+                position: relative;
+                font-family: "Jersey 20", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2rem;
+                margin-left: 6rem;
+
+            }
+
+            .frase.dinamica:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgb(66, 65, 65);
+                border-left: 3px solid black;
+                animation: typing 4s steps(12) infinite;
+            }
+
+            .inicio-container-titulo-nombre-parrafo {
+                font-family: "Sour Gummy", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
+
+        }
+
+        .inicio-container-button {
+            margin: 5rem 12rem;
+            height: 40px;
+            width: 150px;
+            border-radius: 10px;
+            border: none;
+            font-family: "Sour Gummy", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 1rem;
+            background-color: rgb(126, 80, 126);
+
+            ion-icon {
+                font-size: 1rem;
+
+            }
+        }
     }
 
     .inicio-animacion {
-        background-color: rgb(124, 84, 129);
         width: 55%;
         height: 550px;
+    }
+}
+
+
+
+
+//ANIMACIONES 
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
     }
 }

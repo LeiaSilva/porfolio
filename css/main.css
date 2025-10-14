@@ -179,16 +179,101 @@ header .menu-leaguaje img {
   display: flex;
 }
 .inicio .inicio-container {
-  background-color: rgb(69, 135, 194);
   width: 55%;
   height: 550px;
 }
+.inicio .inicio-container .inicio-container-titulo {
+  width: 90%;
+  -webkit-transform: translate(2rem, 4rem);
+          transform: translate(2rem, 4rem);
+}
+.inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 4.5rem;
+  overflow: hidden;
+}
+.inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre .estilo-soy {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 3rem;
+}
+.inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre .estilo-soy span {
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+}
+.inicio .inicio-container .inicio-container-titulo .frase {
+  position: relative;
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-left: 6rem;
+}
+.inicio .inicio-container .inicio-container-titulo .frase.dinamica:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(66, 65, 65);
+  border-left: 3px solid black;
+  -webkit-animation: typing 4s steps(12) infinite;
+          animation: typing 4s steps(12) infinite;
+}
+.inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre-parrafo {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.inicio .inicio-container .inicio-container-button {
+  margin: 5rem 12rem;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: rgb(126, 80, 126);
+}
+.inicio .inicio-container .inicio-container-button ion-icon {
+  font-size: 1rem;
+}
 .inicio .inicio-animacion {
-  background-color: rgb(124, 84, 129);
   width: 55%;
   height: 550px;
 }
 
+@-webkit-keyframes typing {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes typing {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 .inicio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,8 +285,8 @@ header .menu-leaguaje img {
   overflow: hidden;
   margin-left: 10rem;
   margin-top: 0rem;
-  -webkit-animation: float 3s ease-in-out infinite 900ms, entry 3s forwards;
-          animation: float 3s ease-in-out infinite 900ms, entry 3s forwards;
+  -webkit-animation: entry 3s forwards, float 3s ease-in-out infinite 3s;
+          animation: entry 3s forwards, float 3s ease-in-out infinite 3s;
 }
 .inicio .totoro .ears-container {
   width: 100px;
@@ -327,9 +412,10 @@ header .menu-leaguaje img {
   background-color: rgb(255, 255, 255);
   width: 30px;
   height: 30px;
-  -webkit-transform: translate(0, 50%);
-          transform: translate(0, 50%);
+  margin-top: 1rem;
   border-radius: 50%;
+  -webkit-animation: blink 2s infinite;
+          animation: blink 2s infinite;
 }
 .inicio .totoro .body-container .face-container .eyes .eyes-pupil {
   background-color: rgb(46, 46, 46);
@@ -437,8 +523,8 @@ header .menu-leaguaje img {
   height: 35px;
   margin-left: 13rem;
   border-radius: 100%;
-  -webkit-animation: shadowFloat 2s ease-in-out infinite 900ms, shadowEntry 3s forwards;
-          animation: shadowFloat 2s ease-in-out infinite 900ms, shadowEntry 3s forwards;
+  -webkit-animation: shadowEntry 3s forwards, shadowFloat 2s ease-in-out infinite 3s;
+          animation: shadowEntry 3s forwards, shadowFloat 2s ease-in-out infinite 3s;
 }
 
 @-webkit-keyframes shadowFloat {
@@ -545,4 +631,48 @@ header .menu-leaguaje img {
             transform: scaleX(1);
     opacity: 0.8;
   }
+}
+@-webkit-keyframes salto_click {
+  0%, 100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+  50% {
+    -webkit-transform: translateY(2);
+            transform: translateY(2);
+  }
+}
+@keyframes salto_click {
+  0%, 100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+  50% {
+    -webkit-transform: translateY(2);
+            transform: translateY(2);
+  }
+}
+@-webkit-keyframes blink {
+  0%, 90%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  95% {
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
+  }
+}
+@keyframes blink {
+  0%, 90%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  95% {
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
+  }
+}
+.salto {
+  -webkit-animation: salto_click 2s ease-out 1 forwards;
+          animation: salto_click 2s ease-out 1 forwards;
 }

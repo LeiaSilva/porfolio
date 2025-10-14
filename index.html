@@ -8,6 +8,12 @@
     <title>Inicio</title>
 
     <link rel="stylesheet" href="./css/main.css">
+    <!-------FONTS------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jersey+20&family=Meow+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <script type="module" src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js "> </script>
     <script nomodule src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js "> </script>
@@ -35,14 +41,27 @@
     <main>
         <section class="inicio">
             <div class="inicio-container">
-                <div class="inicio-container-titulo"></div>
-                <p class="inicio-container-subtitulo"></p>
-                <button class="inicio-container-button"> Ver Proyectos</button>
+                <div class="inicio-container-titulo" id="titulo">
+
+                    <h1 class="inicio-container-titulo-nombre">
+                        <span class="estilo-soy"><span>S</span>oy</span>
+                        Leia B. Silva
+                    </h1>
+                    <span class="frase dinamica"></span>
+                    <p class="inicio-container-titulo-nombre-parrafo">Fusiono lógica e ingenio creativo para construir
+                        interfaces web bonitas, eficaces e intuitivas.
+                        Mi enfoque es la mejora continua en cada línea de código.</p>
+                </div>
+                <button class="inicio-container-button">
+                    <ion-icon name="bag-outline"></ion-icon>
+                    Ver Proyectos
+                </button>
+
             </div>
-            <div class="inicio-animacion">
+            <div class="inicio-animacion" id="animaciones">
 
 
-                <div class="totoro">
+                <div class="totoro" id="totoro">
 
                     <!--Comienza dibujo-->
                     <!--Ear-->
@@ -120,13 +139,34 @@
                         </div>
                     </div>
                     <!--------------------------->
+
                 </div>
                 <div class="shadow"></div>
+                <div class="" id="heart_attack">
+                </div>
+            </div>
+        </section>
+        <section class="sobreMi">
+            <div class="sobreMi-titulo" id="sobreMi">
+                <p>Sobre Mi</p>
+            </div>
+            <div class="sobreMi-container">
+                <div class="sobreMi-container-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a ipsum hendrerit, ornare nulla eu,
+                        viverra elit. Proin nec felis a orci faucibus accumsan vitae id leo. Quisque iaculis est vel
+                        placerat condimentum. </p>
+                        <button>Descargar CV</button>
+                </div>
+                <div class="sobreMi-container-img">
+                    <img src="#" alt="">
+                </div>
             </div>
         </section>
     </main>
 
     <script src="./JS/header.js"></script>
+    <script src="./JS/totoro.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
