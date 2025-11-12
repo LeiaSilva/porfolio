@@ -1,0 +1,96 @@
+.skills {
+    height: auto;
+
+    .skills-titulo {
+        background-color: rgb(126, 80, 126);
+        width: 25%;
+        padding: 8px;
+        border-radius: 0 20px 20px 0;
+
+        p {
+            font-family: "Sour Gummy", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 1.5rem;
+            margin-left: 5.5rem;
+        }
+    }
+
+    .skills-container {
+        height: 510px;
+        overflow: hidden;
+
+        .skills-container-1 {
+            width: 85%;
+            height: 150px;
+            margin: 1rem 0rem 0rem 5rem;
+            display: flex;
+
+            .skills-container-nombre {
+                border-right: 2px solid grey;
+                width: 20%;
+
+                p {
+                    font-family: "Sour Gummy", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 1.5rem;
+                    position: relative;
+                    left: 3rem;
+                    top: 3rem;
+                }
+            }
+
+            .skills-container-lenguajes {
+                width: 80%;
+                display: flex;
+
+                .skills-container-lenguajes-box {
+                    border: 2px solid rgb(80, 77, 77);
+                    width: 25%;
+                    height: 100px;
+                    margin: 10px;
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: space-around;
+                    border-radius: 20px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: rgba(182, 182, 182, 0.466);
+                    }
+
+                    .skills-container-box-img {
+                        width: 50%;
+
+                        img {
+                            width: 55px;
+                            margin-top: 1.2rem;
+                            margin-left: 1rem;
+                            transform: rotate(0);
+                            transition: transform 0.5s ease-in-out;
+                        }
+                    }
+
+                    p {
+                        width: 50%;
+                        height: 30px;
+                        margin-top: 2rem;
+                        font-family: "Sour Gummy", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: 1.2rem;
+
+                    }
+
+                    &:hover img {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
