@@ -3,11 +3,10 @@
 
     .educacion-titulo {
         background-color: rgb(126, 80, 126);
-        width: 25%;
         padding: 8px;
         border-radius: 20px 0 0 20px;
         position: relative;
-        left: 55rem;
+        left: 65rem;
 
         p {
             font-family: "Sour Gummy", sans-serif;
@@ -29,48 +28,53 @@
         overflow: hidden;
 
         ion-icon {
-            font-size: 2rem;
+            position: absolute;
+            font-size: 2.5rem;
             color: rgb(95, 95, 95);
-            margin: 8rem 0;
             cursor: pointer;
         }
 
+        .back {
+            left: 5rem;
+        }
+
+        .next {
+            right: 5rem;
+        }
+
+
         .educacion-container-cardBox {
             width: 90%;
-            height: 250px;
-            background: #ffffff;
-            background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(86, 148, 108, 1) 50%, rgba(79, 110, 79, 1) 100%);
-            margin: 1rem 1rem;
-            border: 2px solid rgb(95, 95, 95);
-            border-radius: 10px;
             display: flex;
             transition: transform 0.5s ease-in-out;
             overflow: visible;
 
             .educacion-container-card {
-                width: calc(100% - 2rem); 
+                width: calc(100% - 2rem);
                 flex-shrink: 0;
                 display: flex;
                 margin: 0 1.5rem;
                 justify-content: space-around;
                 margin-top: .5rem;
+                box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
                 img {
                     width: 30%;
-                    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
                     margin: .5rem;
 
                 }
 
                 .educacion-container-card-titulos {
+                    overflow: hidden;
 
                     .educacion-container-card-titulos-1 {
                         font-family: "Sour Gummy", sans-serif;
                         font-optical-sizing: auto;
                         font-weight: 300;
                         font-style: normal;
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         margin: 1rem 0;
+                        overflow: hidden;
                     }
 
                     .educacion-container-card-titulos-2 {
@@ -80,15 +84,26 @@
                         font-style: normal;
                         font-size: 1rem;
                         margin: .5rem 10rem;
+                        overflow: hidden;
                     }
 
                     .barra-progreso {
-                        border: 2px solid black;
+                        border: 1.5px solid black;
                         border-radius: 10px;
                         width: 80%;
+                        height: 20px;
                         margin: 2rem 2rem;
                         display: flex;
-                        justify-content: flex-end;
+                        justify-content: flex-start;
+                        position: relative;
+                        overflow: hidden;
+
+                        .progreso-relleno {
+                            height: 100%;
+                            width: 0 !important; 
+                            background-color: rgb(126, 80, 126); 
+                            transition: width 1.5s ease-in-out;
+                        }
 
                         p {
                             font-family: "Sour Gummy", sans-serif;
@@ -96,12 +111,70 @@
                             font-weight: 300;
                             font-style: normal;
                             font-size: 1rem;
-                            margin: 0 .5rem;
+                            z-index: 10;
+                            overflow: hidden;
+                            position: absolute;
                         }
                     }
                 }
 
             }
+
+            .UNLAM {
+                background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(86, 148, 108, 1) 50%, rgba(79, 110, 79, 1) 100%);
+                border-radius: 8px;
+                border: 1.5px solid rgb(122, 122, 122);
+
+                img {
+                    border-radius: 50%;
+                }
+                .barra-progreso{
+                    p{
+                        left: 19rem;
+                    }
+                }
+            }
+
+            .CODER {
+                background-color: black;
+                border-radius: 8px;
+
+                .educacion-container-card-titulos-1 {
+                    color: white;
+                }
+
+                .educacion-container-card-titulos-2 {
+                    color: white;
+                }
+
+                .barra-progreso {
+                    border: 1.5px solid rgb(255, 255, 255) !important;
+
+                    p {
+                        color: white;
+                        left: 17.8rem;
+                    }
+
+                }
+            }
+
+            .COLE {
+                background-color: rgb(255, 255, 255);
+                border: 1.5px solid rgb(122, 122, 122);
+                border-radius: 8px;
+                .barra-progreso{
+                    p{
+                        left: 26rem;
+                    }
+                }
+            }
         }
     }
+}
+
+.animar-ancho {
+    width: 0;
+    transition: width 1.5s ease-in-out;
+    overflow: hidden; 
+    white-space: nowrap;
 }
