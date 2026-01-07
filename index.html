@@ -327,23 +327,27 @@
         <!--PROYECTOS-->
         <section class="proyectos">
             <!--TITULO-->
-            <div class="proyectos-titulo">
+            <div class="proyectos-titulo" data-progreso="25%">
                 <p>PROYECTOS</p>
             </div>
             <div class="proyectos-container">
                 <div class="proyectos-container-titulos">
-                    <button>Ultimos</button>
-                    <button>Todos</button>
+                    <button id="ultimos">Ultimos</button>
+                    <button id="todos">Todos</button>
                 </div>
-                <div class="proyectos-container-cards">
+                <div class="proyectos-container-cards" id="container-cards">
                 </div>
             </div>
         </section>
     </main>
 
+    <!--MODAL-->
+    <div class="modal" id="modal"></div>
+
     <script src="./JS/header.js"></script>
     <script src="./JS/totoro.js"></script>
     <script src="./JS/educacion.js"></script>
+    <script src="./JS/proyectos.js"></script>
     <script src="./main.js"></script>
 </body>
 
