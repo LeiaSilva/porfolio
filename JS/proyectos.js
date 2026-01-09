@@ -112,14 +112,14 @@ btn1.addEventListener("click", () => {
     const filtrados = misProyectos.filter(p => p.categoria === "Últimos");
     generarProyectos(filtrados);
 
-    btn1.classList.add("activo");
-    btn2.classList.remove("activo");
+    btn1.classList.add("active");
+    btn2.classList.remove("active");
 });
 
 // Filtro para "Todos"
 btn2.addEventListener("click", () => {
     generarProyectos(misProyectos);
 
-    btn1.classList.add("activo");
-    btn2.classList.remove("activo");
+    btn2.classList.add("active");
+    btn1.classList.remove("active");
 });

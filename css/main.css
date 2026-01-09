@@ -714,7 +714,7 @@ header .menu-leaguaje img {
 }
 .sobreMi .sobreMi-titulo {
   background-color: rgb(126, 80, 126);
-  width: 25%;
+  width: 50%;
   padding: 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1006,7 +1006,7 @@ header .menu-leaguaje img {
 }
 .skills .skills-titulo {
   background-color: rgb(126, 80, 126);
-  width: 25%;
+  width: 40%;
   padding: 8px;
   border-radius: 0 20px 20px 0;
 }
@@ -1016,7 +1016,7 @@ header .menu-leaguaje img {
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
-  margin-left: 5.5rem;
+  margin-left: 18rem;
 }
 .skills .skills-container {
   height: 510px;
@@ -1202,6 +1202,11 @@ header .menu-leaguaje img {
           filter: brightness(1.1);
 }
 
+.active {
+  background-color: rgba(255, 0, 0, 0.603);
+  border: 2px solid rgba(255, 0, 0, 0.623);
+}
+
 @-webkit-keyframes rotar {
   from {
     -webkit-transform: rotate(0deg);
@@ -1247,6 +1252,149 @@ header .menu-leaguaje img {
             transform: translateY(0);
   }
 }
+.contacto {
+  height: auto;
+  margin-top: 1rem;
+}
+.contacto .contacto-titulo {
+  background-color: rgb(126, 80, 126);
+  width: 50%;
+  padding: 8px;
+  border-radius: 0 20px 20px 0;
+}
+.contacto .contacto-titulo p {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-left: 13rem;
+}
+
+.contacto-container .contacto-container-descrip {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 1rem;
+  width: 90%;
+}
+.contacto-container .contacto-container-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes {
+  width: 50%;
+  height: 180px;
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .redes-titulo {
+  font-size: 1.8rem;
+  margin-left: 10rem;
+  margin-top: 1.5rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-left: 13rem;
+  margin-top: 1rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .email ion-icon {
+  font-size: 1.3rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .email p {
+  font-size: 1.1rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .redes {
+  margin-left: 15rem;
+  width: 50%;
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .redes ion-icon {
+  font-size: 2rem;
+  border: 2px solid rgb(119, 68, 119);
+  padding: 0.2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: rgb(119, 68, 119);
+  color: black;
+  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .redes ion-icon:hover {
+  -webkit-transform: scale(1) rotate(15deg) translateY(-5px);
+          transform: scale(1) rotate(15deg) translateY(-5px);
+}
+.contacto-container .contacto-container-info .contacto-container-info-redes .redes a {
+  font-style: none;
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj {
+  width: 50%;
+  height: 180px;
+  overflow: hidden;
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor {
+  margin: 1.5rem 11rem;
+  padding: 10px;
+  width: 50%;
+  border: 2px solid grey;
+  border-radius: 15px;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor .-titulo {
+  font-size: 1.8rem;
+  font-style: inherit;
+  margin: 0.2rem 0rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor .-descrip {
+  font-size: 1rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor button {
+  border-style: none;
+  background-color: plum;
+  border-radius: 6px;
+  width: 100%;
+  padding: 0.2rem;
+  margin: 0.5rem 0rem 0rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor button .-btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  margin-left: 0.8rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor button ion-icon {
+  font-size: 1.2rem;
+}
+.contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor:hover {
+  -webkit-transform: translateY(-12px) scale(1.02);
+          transform: translateY(-12px) scale(1.02);
+}
+
+footer {
+  border-top: 2px solid rgba(105, 105, 105, 0.89);
+  padding: 1rem;
+  margin: 1rem 2rem;
+}
+footer p {
+  margin-left: 35rem;
+  margin-top: 0.5rem;
+}
+
 @-webkit-keyframes aparecerYCrecer {
   0% {
     opacity: 0;
@@ -1259,6 +1407,7 @@ header .menu-leaguaje img {
             transform: scale(1);
   }
 }
+
 @keyframes aparecerYCrecer {
   0% {
     opacity: 0;
