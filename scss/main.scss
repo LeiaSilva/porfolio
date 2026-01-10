@@ -1,12 +1,17 @@
 @charset "UTF-8";
 /*--GLOABLES--*/
+:root{
+  --fondo: rgb(238, 238, 238);
+  --typing:  rgb(238, 238, 238);
+  --primario: rgb(114, 106, 149);
+}
   * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 body{
-  background-color: white;
+  background-color: var(--fondo);
   .modal{
     background-color: rgb(82, 82, 82);
     height: 400px;
@@ -49,7 +54,8 @@ body{
   }
 }
 body.dark{
-  background-color: rgb(66, 65, 65)
+  --fondo: rgb(55, 53, 62);
+  --typing: rgb(55, 53, 62);
 }
 /*-- PARTICIONES--*/
 @import "./header";

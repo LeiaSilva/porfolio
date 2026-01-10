@@ -2,7 +2,7 @@
     height: auto;
 
     .proyectos-titulo {
-        background-color: rgb(126, 80, 126);
+        background-color: var(--primario);
         padding: 8px;
         border-radius: 20px 0 0 20px;
         position: relative;
@@ -23,7 +23,7 @@
         overflow: hidden;
 
         .proyectos-container-titulos {
-            background-color: grey;
+            background-color: var(--primario);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -39,7 +39,22 @@
                 margin: 0 1rem;
                 border-radius: 8px;
                 cursor: pointer;
+                border-style: none;
+                transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
+                &:hover {
+                    box-shadow:
+                        0 0 10px rgb(134, 93, 255),
+                        0 0 20px rgb(134, 93, 255),
+                        0 0 40px rgb(134, 93, 255);
+                    transform: translateY(-2px);
+                    border: 2px solid rgb(134, 93, 255);
+                    color: rgba(76, 11, 78, 0.541);
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
             }
         }
 
@@ -79,7 +94,7 @@
                 }
 
                 .card-img {
-                    background-color: plum;
+                    background-color: var(--primario);
                     height: 180px;
                     overflow: hidden;
 
@@ -102,9 +117,15 @@
         }
     }
 }
-.active{
-    background-color: rgba(255, 0, 0, 0.603);
-    border: 2px solid rgba(255, 0, 0, 0.623);
+
+.active {
+    box-shadow:
+        0 0 10px rgb(134, 93, 255),
+        0 0 20px rgb(134, 93, 255),
+        0 0 40px rgb(134, 93, 255);
+    transform: translateY(-2px);
+    border: 2px solid rgb(134, 93, 255);
+    color: rgba(76, 11, 78, 0.541);
 }
 
 
@@ -119,11 +140,13 @@
     }
 
 }
+
 @keyframes aparecerCard {
     from {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

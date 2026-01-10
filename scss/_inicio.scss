@@ -44,6 +44,7 @@
                 font-style: normal;
                 font-size: 2rem;
                 margin-left: 6rem;
+                text-shadow: 0 0 5px rgb(134, 93, 255);
 
             }
 
@@ -54,7 +55,7 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                background-color: rgb(66, 65, 65);
+                background-color: var(--typing);
                 border-left: 3px solid black;
                 animation: typing 4s steps(12) infinite;
             }
@@ -81,7 +82,29 @@
             font-weight: 300;
             font-style: normal;
             font-size: 1rem;
-            background-color: rgb(126, 80, 126);
+            background-color: var(--primario);
+            cursor: pointer;
+            animation: pulse 1s infinite;
+
+            &:hover {
+                box-shadow:
+                    0 0 10px rgb(134, 93, 255),
+                    0 0 20px rgb(134, 93, 255),
+                    0 0 40px rgb(134, 93, 255);
+                transform: translateY(-2px);
+                border: 1px solid rgb(134, 93, 255);
+                color: rgba(76, 11, 78, 0.541);
+            }
+
+            &:active {
+                box-shadow:
+                    0 0 10px rgb(134, 93, 255),
+                    0 0 20px rgb(134, 93, 255),
+                    0 0 40px rgb(134, 93, 255);
+                transform: translateY(-2px);
+                border: 1px solid rgb(134, 93, 255);
+                color: rgba(76, 11, 78, 0.541);
+            }
 
             ion-icon {
                 font-size: 1rem;

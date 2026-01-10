@@ -12,7 +12,7 @@ header {
 
     .menu-atajos {
         margin: 12px;
-        background-color: rgb(189, 189, 189);
+        background-color: var(--primario);
         width: 60%;
         height: 3.5rem;
         border-radius: 30px;
@@ -20,6 +20,8 @@ header {
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 1s ease;
+        box-shadow: none;
+        border-style: none;
 
         ul {
             display: flex;
@@ -29,9 +31,9 @@ header {
             transition: opacity 0.2 ease;
 
             li {
-                margin-top: 18px;
+                margin-top: 16px;
                 text-decoration: none;
-                padding: 2px 5px;
+                padding: 2px 9px;
 
                 a {
                     font-size: 1.2rem;

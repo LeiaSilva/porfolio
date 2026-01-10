@@ -2,7 +2,7 @@
     height: auto;
 
     .educacion-titulo {
-        background-color: rgb(126, 80, 126);
+        background-color: var(--primario);
         padding: 8px;
         border-radius: 20px 0 0 20px;
         position: relative;
@@ -30,7 +30,7 @@
         ion-icon {
             position: absolute;
             font-size: 2.5rem;
-            color: rgb(95, 95, 95);
+            color: black;
             cursor: pointer;
         }
 
@@ -88,7 +88,7 @@
                     }
 
                     .barra-progreso {
-                        border: 1.5px solid black;
+                        border: 1.5px solid rgba(95, 95, 95, 0.884);
                         border-radius: 10px;
                         width: 80%;
                         height: 20px;
@@ -101,7 +101,7 @@
                         .progreso-relleno {
                             height: 100%;
                             width: 0 !important; 
-                            background-color: rgb(126, 80, 126); 
+                            background-color: var(--primario); 
                             transition: width 1.5s ease-in-out;
                         }
 

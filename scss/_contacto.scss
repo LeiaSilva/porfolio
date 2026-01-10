@@ -3,8 +3,8 @@
     margin-top: 1rem;
 
     .contacto-titulo {
-        background-color: rgb(126, 80, 126);
-        width: 50%;
+        background-color: var(--primario);
+        width: 35%;
         padding: 8px;
         border-radius: 0 20px 20px 0;
 
@@ -30,7 +30,7 @@
         font-size: 1.2rem;
         margin-left: 5rem;
         margin-top: 1rem;
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid var(--primario);
         padding-bottom: 1rem;
         width: 90%;
     }
@@ -69,11 +69,11 @@
 
                 ion-icon {
                     font-size: 2rem;
-                    border: 2px solid rgb(119, 68, 119);
+                    border: 2px solid var(--primario);
                     padding: .2rem;
                     margin: 1rem;
                     border-radius: 10px;
-                    background-color: rgb(119, 68, 119);
+                    background-color: var(--primario);
                     color: black;
                     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -96,9 +96,9 @@
 
             .cotacto-container-info-msj-contenedor {
                 margin: 1.5rem 11rem;
-                padding: 10px;
+                padding: 10px 15px;
                 width: 50%;
-                border: 2px solid grey;
+                border: 1px solid grey;
                 border-radius: 15px;
                 transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
@@ -114,19 +114,40 @@
 
                 button {
                     border-style: none;
-                    background-color: plum;
+                    background-color: var(--primario);
                     border-radius: 6px;
                     width: 100%;
                     padding: .2rem;
                     margin: .5rem 0rem 0rem 0rem;
                     display: flex;
                     justify-content: center;
+                    cursor: pointer;
+                    animation: pulse 1s infinite;
+
+                    &:hover {
+                        box-shadow:
+                            0 0 10px rgb(134, 93, 255),
+                            0 0 20px rgb(134, 93, 255),
+                            0 0 40px rgb(134, 93, 255);
+                        border: 1px solid rgb(134, 93, 255);
+                        color: rgba(76, 11, 78, 0.541);
+                    }
+
+                    &:active {
+                        box-shadow:
+                            0 0 10px rgb(134, 93, 255),
+                            0 0 20px rgb(134, 93, 255),
+                            0 0 40px rgb(134, 93, 255);
+                        border: 1px solid rgb(134, 93, 255);
+                        color: rgba(76, 11, 78, 0.541);
+                    }
 
                     .-btn {
                         text-decoration: none;
                         color: black;
                         font-size: 1rem;
                         margin-left: .8rem;
+
                     }
 
                     ion-icon {
