@@ -12,7 +12,7 @@ header {
 
     .menu-atajos {
         margin: 12px;
-        background-color: var(--primario);
+        background: var(--header);
         width: 60%;
         height: 3.5rem;
         border-radius: 30px;
@@ -103,35 +103,42 @@ header {
             height: 450px;
             z-index: 1;
             border-radius: 0;
-            ul{
+
+            ul {
                 display: flex;
                 flex-direction: column;
                 gap: 5rem;
                 margin: 40px 30px;
-                li{
+
+                li {
                     margin: 0px 60px;
-                    a{
+
+                    a {
                         font-size: 1.4rem;
                     }
                 }
             }
         }
-         .menu-modos{
+
+        .menu-modos {
             margin: 20px 16px;
             position: relative;
             left: 5rem;
-            .moon{
+
+            .moon {
                 font-size: 1.7rem;
             }
 
-         }
-         .menu-leaguaje{
+        }
+
+        .menu-leaguaje {
             width: auto;
             height: auto;
-            img{
+
+            img {
                 margin: 15px 15px;
             }
-         }
+        }
     }
 
 

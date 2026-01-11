@@ -2,8 +2,12 @@
 /*--GLOABLES--*/
 :root{
   --fondo: rgb(238, 238, 238);
-  --typing:  rgb(238, 238, 238);
-  --primario: rgb(114, 106, 149);
+  --primario:rgb(114, 106, 149);
+  --estatico: rgb(127, 120, 153);
+  --text: rgb(255, 255, 255);
+  --header: radial-gradient(circle,rgba(204, 163, 200, 1) 0%, rgba(196, 180, 216, 1) 38%, rgba(235, 238, 240, 1) 100%);
+
+
 }
   * {
     margin: 0;
@@ -55,9 +59,12 @@ body{
 }
 body.dark{
   --fondo: rgb(55, 53, 62);
-  --typing: rgb(55, 53, 62);
+  --estatico: rgb(238, 238, 238);
+  --text: black;
+  --header: radial-gradient(circle,rgba(132, 150, 189, 1) 0%, rgba(138, 83, 138, 1) 37%, rgba(55, 53, 62, 1) 94%);
 }
 /*-- PARTICIONES--*/
+@import "./fondo";
 @import "./header";
 @import "./inicio";
 @import "./totoro";

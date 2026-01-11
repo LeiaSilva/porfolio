@@ -7,7 +7,7 @@
 
         .inicio-container-titulo {
             width: 90%;
-            transform: translate(2rem, 4rem);
+            transform: translate(4rem, 4rem);
 
             .inicio-container-titulo-nombre {
                 font-family: "Sour Gummy", sans-serif;
@@ -38,41 +38,38 @@
 
             //Frase dinamica
             .frase {
+                display: inline-block; 
+                width: auto; 
                 position: relative;
                 font-family: "Jersey 20", sans-serif;
-                font-weight: 400;
-                font-style: normal;
                 font-size: 2rem;
                 margin-left: 6rem;
-                text-shadow: 0 0 5px rgb(134, 93, 255);
+                margin-top: .2rem;
+                min-height: 2rem;
+                color: var(--primario);
+                text-shadow: 0 0 10px var(--primario);
+                border-right: 3px solid var(--primario);
+                padding-right: 5px;
+                white-space: nowrap;
+                animation: cursor-blink .7s step-end infinite;
 
             }
 
-            .frase.dinamica:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                background-color: var(--typing);
-                border-left: 3px solid black;
-                animation: typing 4s steps(12) infinite;
-            }
 
             .inicio-container-titulo-nombre-parrafo {
                 font-family: "Sour Gummy", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 300;
                 font-style: normal;
-                font-size: 1.5rem;
-                margin-top: 2rem;
+                font-size: 1.3rem;
+                margin-top: .5rem;
+                margin-left: 2rem;
             }
 
         }
 
         .inicio-container-button {
-            margin: 5rem 12rem;
+            margin: 6rem 16rem;
             height: 40px;
             width: 150px;
             border-radius: 10px;
@@ -133,5 +130,29 @@
 
     100% {
         left: 0%;
+    }
+}
+
+@keyframes typing-new {
+
+    0%,
+    10% {
+        width: 0;
+    }
+
+    40%,
+    60% {
+        width: 400px;
+    }
+
+    90%,
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes cursor-blink {
+    50% {
+        border-color: transparent;
     }
 }

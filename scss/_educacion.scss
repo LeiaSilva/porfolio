@@ -173,6 +173,7 @@
 }
 
 .animar-ancho {
+    display: inline-block;
     width: 0;
     transition: width 1.5s ease-in-out;
     overflow: hidden; 

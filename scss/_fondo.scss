@@ -1,0 +1,73 @@
+.fondo-animado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-color: var(--fondo);
+
+    .esfera {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(120px);
+        opacity: 0.3;
+        animation: flotarGeneral 25s infinite alternate ease-in-out;
+
+        &:nth-child(1) {
+            width: 400px;
+            height: 400px;
+            background: var(--primario);
+            top: 5%;
+            left: -10%;
+        }
+
+        &:nth-child(2) {
+            width: 500px;
+            height: 500px;
+            background: #4a90e2;
+            top: 25%;
+            right: -10%;
+            animation-delay: -2s;
+        }
+
+        &:nth-child(3) {
+            width: 350px;
+            height: 350px;
+            background: #ff00ff;
+            top: 50%;
+            left: 15%;
+            animation-delay: -5s;
+        }
+
+        &:nth-child(4) {
+            width: 450px;
+            height: 450px;
+            background: var(--primario);
+            top: 75%;
+            right: 5%;
+            animation-delay: -7s;
+        }
+
+        &:nth-child(5) {
+            width: 300px;
+            height: 300px;
+            background: #4a90e2;
+            top: 90%;
+            left: -5%;
+        }
+    }
+}
+
+
+//animacion 
+@keyframes flotarGeneral {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    to {
+        transform: translate(50px, 100px) rotate(30deg);
+    }
+}
