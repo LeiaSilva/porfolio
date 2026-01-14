@@ -129,9 +129,9 @@
                     height: 30px;
                     margin-top: 1rem;
                     border-radius: 50%;
-                    animation: 
+                    animation:
                         blink 2s infinite;
-                    
+
 
                     .eyes-pupil {
                         background-color: rgb(46, 46, 46);
@@ -309,27 +309,48 @@
     }
 }
 
-@keyframes salto_click{
-    0% , 100% { 
+@keyframes salto_click {
+
+    0%,
+    100% {
         transform: translateY(1);
     }
-    50%{
+
+    50% {
         transform: translateY(2);
     }
 }
 
 //PESTAÑEO
-@keyframes blink{
-    0% , 90% , 100%{
+@keyframes blink {
+
+    0%,
+    90%,
+    100% {
         transform: scaleY(1);
     }
-    95%{
+
+    95% {
         transform: scaleY(0.2);
     }
 
 }
 
 //Clases JS- animaciones
-.salto{
+.salto {
     animation: salto_click 2s ease-out 1 forwards;
+}
+
+//RESPONSIVE
+//CELUS PEQUES
+@media screen and (max-width: 480px) {
+    .inicio {
+        flex-direction: column-reverse;
+        .totoro{
+            margin-left: 4rem;
+        }
+        .shadow{
+            margin-left: 7rem;
+        }
+    }
 }

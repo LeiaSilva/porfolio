@@ -12,9 +12,9 @@ const misProyectos = [
         categoria: "Últimos",
         estado: "Finalizado",
         descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
-        imagen: "./assets/unlam-logo.jpg",
+        imagen: "./assets/bulkPage.png",
         link: "https://github.com/LeiaSilva/porfolio/settings/pages",
-        tecnologias: ["HTML", "CSS", "Responsive", "JS"]
+        tecnologias: ["HTML", "CSS","SASS", "Responsive", "JS"]
     },
     {
         id: 2,
@@ -22,9 +22,9 @@ const misProyectos = [
         categoria: "Últimos",
         estado: "Finalizado",
         descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
-        imagen: "https://via.placeholder.com/400x300?text=Coming+Soon",
+        imagen: "./assets/porfolioPage.png",
         link: "https://github.com/LeiaSilva/porfolio/settings/pages",
-        tecnologias: ["HTML", "CSS", "Responsive", "JS"]
+        tecnologias: ["HTML", "CSS", "SASS","Responsive", "JS"]
     },
     {
         id: 3,
@@ -85,18 +85,17 @@ function abrirModal(proyecto) {
 
     modal.innerHTML = `
         <ion-icon name="close-outline" id="cerrar-modal"></ion-icon>
-        <div class="modal-img">
-            <img src="${proyecto.imagen}"></img>
-        </div>
-        <div class="proyecto-info>
-            <p>${proyecto.titulo}</p>
+        <div class="proyecto-info">
+            <p class="proyecto-info-titulo">${proyecto.titulo}</p>
             <div class="proyecto-info-descrip">
                 <p>${proyecto.descripción}</p>
             </div>
             <div class="proyecto-info-tec">
                 ${proyecto.tecnologias.map(t => `<span class="badge">${t}</span>`).join('')}
             </div>
-            <a href="${proyecto.link}" class="modal-info-link></a>
+            <button>
+            <a href="${proyecto.link}" class="modal-info-link">Visitar Web <ion-icon name="link-outline" class="links"></ion-icon></a>
+            </button>
         </div>
 
     `
@@ -107,7 +106,7 @@ function abrirModal(proyecto) {
         modal.style.display = "none";
     })
 }
-//Filtrado de proyectos
+//Filtro "ultimos"
 btn1.addEventListener("click", () => {
     const filtrados = misProyectos.filter(p => p.categoria === "Últimos");
     generarProyectos(filtrados);

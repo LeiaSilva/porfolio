@@ -60,6 +60,10 @@
                 background-color: var(--primario);
                 cursor: pointer;
                 animation: pulse 1s infinite;
+                a{
+                    text-decoration: none;
+                    color: var(--text);
+                }
 
                 &:hover {
                     box-shadow:

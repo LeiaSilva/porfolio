@@ -70,13 +70,13 @@
             margin: 0 auto;
 
             .proyectos-container-cards-box {
-                background-color: grey;
-                width: 70%;
+                width: 80%;
                 height: 200px;
                 margin: 0 5rem;
                 transition: transform 1s ease, box-shadow 0.3s ease;
                 animation: aparecerCard 1.5s ease forwards;
                 cursor: pointer;
+                overflow: hidden;
 
                 .overlay-construccion {
                     background-color: rgba(49, 49, 49, 0.459);
@@ -87,7 +87,7 @@
                         font-size: 2rem;
                         color: white;
                         position: relative;
-                        left: 9rem;
+                        left: 10.5rem;
                         top: 5rem;
                         animation: rotar 2s linear infinite;
                     }
@@ -100,12 +100,16 @@
 
                     img {
                         height: 180px;
-                        object-fit: cover;
                     }
                 }
 
                 p {
-                    margin: 0rem;
+                    margin: 0rem 1.5rem;
+                    font-family: "Sour Gummy", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 1rem;
                 }
 
                 &:hover {

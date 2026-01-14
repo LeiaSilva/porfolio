@@ -31,10 +31,11 @@
         <ion-icon class="menu-icon" name="menu-outline" id="menu"></ion-icon>
         <nav class="menu-atajos" id="navbar">
             <ul id="navbar-contenido">
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Educación</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#skills">Proyectos</a></li>
+                <li><a href="#proyectos">Skills</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <div class="menu-modos" id="mode">
@@ -153,7 +154,7 @@
                 </div>
             </div>
         </section>
-        <section class="sobreMi">
+        <section class="sobreMi" id="sobreMi">
             <div class="sobreMi-titulo animar-ancho" id="sobreMi" data-progreso="25%">
                 <p>Sobre Mi</p>
             </div>
@@ -184,13 +185,15 @@
                     </div>
 
                     <button class="sobreMi-container-texto-cv">
-                        <ion-icon name="cloud-download-outline"></ion-icon>
-                        Descargar CV</button>
+                        <a href="./assets/silva-leia-cv.pdf" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="cloud-download-outline"></ion-icon>
+                            Descargar CV</button>
+                    </a>
                 </div>
 
             </div>
         </section>
-        <section class="educacion">
+        <section class="educacion" id="educacion">
             <!--TITULO-->
             <div class="educacion-titulo animar-ancho" data-progreso="25%">
                 <p>Educación</p>
@@ -248,7 +251,7 @@
             </div>
         </section>
         <!---SKILSS-->
-        <section class="skills">
+        <section class="skills" id="skills">
             <!--TITULO-->
             <div class="skills-titulo animar-ancho" data-progreso="25%">
                 <p>SKILLS</p>
@@ -332,7 +335,7 @@
             </div>
         </section>
         <!--PROYECTOS-->
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <!--TITULO-->
             <div class="proyectos-titulo animar-ancho" data-progreso="25%">
                 <p>PROYECTOS</p>
@@ -347,13 +350,14 @@
             </div>
             <!--CONTACTO-->
         </section>
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <div class="contacto-titulo animar-ancho" data-progreso="35%">
                 <p>Contacto Profesional</p>
             </div>
             <div class="contacto-container">
                 <div class="contacto-container-descrip">
-                    <p>¿Tenés un proyecto en mente o queres colaborar?Me encantaría conocerte. Estoy abierta a discutir nuevas oportunidades de desarrollo.</p>
+                    <p>¿Tenés un proyecto en mente o queres colaborar?Me encantaría conocerte. Estoy abierta a discutir
+                        nuevas oportunidades de desarrollo.</p>
                 </div>
                 <div class="contacto-container-info">
                     <div class="contacto-container-info-redes">
@@ -363,14 +367,16 @@
                             <p>leiabelensilva@gmail.com</p>
                         </div>
                         <div class="redes">
-                            <a href="https://www.linkedin.com/in/leia-belen-silva-9904b3285/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a href="https://www.linkedin.com/in/leia-belen-silva-9904b3285/"><ion-icon
+                                    name="logo-linkedin"></ion-icon></a>
                             <a href="https://github.com/LeiaSilva"> <ion-icon name="logo-github"></ion-icon></a>
                         </div>
                     </div>
                     <div class="contacto-container-info-msj">
                         <div class="cotacto-container-info-msj-contenedor">
                             <p class="-titulo">Envíame un mensaje</p>
-                            <p class="-descrip">Si tienes alguna pregunta o proyecto en mente, no dudes en contactarme. Respondo todos los mensajes dentro de 24 horas.</p>
+                            <p class="-descrip">Si tienes alguna pregunta o proyecto en mente, no dudes en contactarme.
+                                Respondo todos los mensajes dentro de 24 horas.</p>
                             <button>
                                 <ion-icon name="mail-outline"></ion-icon>
                                 <a href="mailto:leiabelensilva@gmail.com" class="-btn">Enviar Email</a>
@@ -396,5 +402,8 @@
 <footer>
     <p>©2026 Silva Leia. Derechos reservados.</p>
 </footer>
+<div class="btn-subir" id="btn-scroll">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+</div>
 
 </html>

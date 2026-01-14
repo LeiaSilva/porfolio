@@ -62,3 +62,23 @@ document.addEventListener("DOMContentLoaded" , () =>{
     const elementos =document.querySelectorAll('.animar-ancho');
     elementos.forEach(el => observar.observe(el));
 })
+
+//BTN SUBIR
+document.addEventListener("DOMContentLoaded", () => {
+    const btnSubir = document.getElementById("btn-scroll");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+            btnSubir.classList.add("mostrar");
+        } else {
+            btnSubir.classList.remove("mostrar");
+        }
+    });
+
+    btnSubir.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" 
+        });
+    });
+});

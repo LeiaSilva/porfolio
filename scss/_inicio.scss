@@ -156,3 +156,34 @@
         border-color: transparent;
     }
 }
+
+//RESPONSIVE
+//CELUS PEQUEÑOS
+@media screen and (max-width: 480px){
+    .inicio{
+        flex-direction: column-reverse;
+        .inicio-container{
+            width: 100%;
+            overflow: hidden;
+            .inicio-container-titulo{
+                width: 100%;
+                transform: translate(.5rem , 0);
+                .inicio-container-titulo-nombre{
+                    display: flex;
+                    flex-direction: column;
+                     .estilo-soy{
+                        margin-left: 1rem;
+                     }
+
+                }
+
+            }
+
+            
+        }
+        .inicio-animacion{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
