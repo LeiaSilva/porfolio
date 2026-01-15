@@ -38,8 +38,8 @@
 
             //Frase dinamica
             .frase {
-                display: inline-block; 
-                width: auto; 
+                display: inline-block;
+                width: auto;
                 position: relative;
                 font-family: "Jersey 20", sans-serif;
                 font-size: 2rem;
@@ -159,29 +159,57 @@
 
 //RESPONSIVE
 //CELUS PEQUEÑOS
-@media screen and (max-width: 480px){
-    .inicio{
+@media screen and (max-width: 480px) {
+    .inicio {
         flex-direction: column-reverse;
-        .inicio-container{
+
+        .inicio-container {
             width: 100%;
             overflow: hidden;
-            .inicio-container-titulo{
+            height: 380px;
+
+            .inicio-container-titulo {
                 width: 100%;
-                transform: translate(.5rem , 0);
-                .inicio-container-titulo-nombre{
+                transform: translate(.5rem, 0);
+
+                .inicio-container-titulo-nombre {
                     display: flex;
-                    flex-direction: column;
-                     .estilo-soy{
+                    gap: 2rem;
+                    font-size: 3rem;
+                    margin-left: .5rem;
+
+                    .estilo-soy {
                         margin-left: 1rem;
-                     }
+                        font-size: 2.5rem;
+
+                        span {
+                            font-size: 3rem;
+                        }
+                    }
 
                 }
 
+                .frase {
+                    margin: 0;
+                    margin-left: 1.2rem;
+                    font-size: 1.8rem;
+                }
+                .inicio-container-titulo-nombre-parrafo{
+                    margin: .5rem 1.7rem;
+                    font-size: 1.5rem;
+                }
+                
+
+            }
+            .inicio-container-button{
+                margin: 1rem 8rem;
             }
 
-            
+
+
         }
-        .inicio-animacion{
+
+        .inicio-animacion {
             width: 100%;
             margin: 0;
         }

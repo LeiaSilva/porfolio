@@ -563,6 +563,7 @@ header .menu-leaguaje img {
   .inicio .inicio-container {
     width: 100%;
     overflow: hidden;
+    height: 380px;
   }
   .inicio .inicio-container .inicio-container-titulo {
     width: 100%;
@@ -573,13 +574,28 @@ header .menu-leaguaje img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    gap: 2rem;
+    font-size: 3rem;
+    margin-left: 0.5rem;
   }
   .inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre .estilo-soy {
     margin-left: 1rem;
+    font-size: 2.5rem;
+  }
+  .inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre .estilo-soy span {
+    font-size: 3rem;
+  }
+  .inicio .inicio-container .inicio-container-titulo .frase {
+    margin: 0;
+    margin-left: 1.2rem;
+    font-size: 1.8rem;
+  }
+  .inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre-parrafo {
+    margin: 0.5rem 1.7rem;
+    font-size: 1.5rem;
+  }
+  .inicio .inicio-container .inicio-container-button {
+    margin: 1rem 8rem;
   }
   .inicio .inicio-animacion {
     width: 100%;
