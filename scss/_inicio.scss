@@ -83,6 +83,17 @@
             cursor: pointer;
             animation: pulse 1s infinite;
 
+            a {
+                text-decoration: none;
+                color: black;
+
+                ion-icon {
+                    font-size: 1rem;
+
+                }
+
+            }
+
             &:hover {
                 box-shadow:
                     0 0 10px rgb(134, 93, 255),
@@ -101,11 +112,6 @@
                 transform: translateY(-2px);
                 border: 1px solid rgb(134, 93, 255);
                 color: rgba(76, 11, 78, 0.541);
-            }
-
-            ion-icon {
-                font-size: 1rem;
-
             }
         }
     }
@@ -194,14 +200,16 @@
                     margin-left: 1.2rem;
                     font-size: 1.8rem;
                 }
-                .inicio-container-titulo-nombre-parrafo{
+
+                .inicio-container-titulo-nombre-parrafo {
                     margin: .5rem 1.7rem;
                     font-size: 1.5rem;
                 }
-                
+
 
             }
-            .inicio-container-button{
+
+            .inicio-container-button {
                 margin: 1rem 8rem;
                 color: black;
             }

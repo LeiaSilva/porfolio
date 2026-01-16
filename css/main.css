@@ -480,6 +480,13 @@ header .menu-leaguaje img {
   -webkit-animation: pulse 1s infinite;
           animation: pulse 1s infinite;
 }
+.inicio .inicio-container .inicio-container-button a {
+  text-decoration: none;
+  color: black;
+}
+.inicio .inicio-container .inicio-container-button a ion-icon {
+  font-size: 1rem;
+}
 .inicio .inicio-container .inicio-container-button:hover {
   -webkit-box-shadow: 0 0 10px rgb(134, 93, 255), 0 0 20px rgb(134, 93, 255), 0 0 40px rgb(134, 93, 255);
           box-shadow: 0 0 10px rgb(134, 93, 255), 0 0 20px rgb(134, 93, 255), 0 0 40px rgb(134, 93, 255);
@@ -495,9 +502,6 @@ header .menu-leaguaje img {
           transform: translateY(-2px);
   border: 1px solid rgb(134, 93, 255);
   color: rgba(76, 11, 78, 0.541);
-}
-.inicio .inicio-container .inicio-container-button ion-icon {
-  font-size: 1rem;
 }
 .inicio .inicio-animacion {
   width: 55%;
