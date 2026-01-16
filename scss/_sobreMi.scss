@@ -138,3 +138,57 @@
         transform: scale(1);
     }
 }
+
+//RESPONSIVE
+//CELUS PEQUEÑOS
+@media screen and (max-width: 480px){
+    .sobreMi{
+        .sobreMi-titulo{
+            p{
+                font-size: 1.5rem;
+                margin-left: .2rem;
+                padding: 2px;
+            }
+
+        }
+        .sobreMi-container{
+            flex-direction: column;
+            height: 750px;
+            .sobreMi-container-texto{
+                width: 100%;
+                overflow: hidden;
+                height: 600px;
+                margin-top: 1rem;
+                div{
+                    width: 100%;
+                    border-radius: 0;
+                    margin: 0;
+                    p{
+                        margin: .5rem 1rem;
+                        font-size: 1rem;
+                    }
+                }
+                 .sobreMi-container-texto-cv{
+                    margin: 0;
+                    position: absolute;
+                    top: 112rem;
+                    left: 8rem;
+                 }
+
+            }
+             .sobreMi-container-img{
+                width: 100%;
+                margin: 0;
+                img{
+                    margin: .5rem 3.6rem;
+                    position: unset;
+                    border-radius: 10px 150px 10px 150px;
+                    width: 16rem;
+                    
+                }
+             }
+        }
+        
+
+    }
+}
