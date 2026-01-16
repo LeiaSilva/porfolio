@@ -11,8 +11,8 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -563,6 +563,7 @@ header .menu-leaguaje img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    overflow-x: hidden;
   }
   .inicio .inicio-container {
     width: 100%;
@@ -1418,9 +1419,10 @@ header .menu-leaguaje img {
     gap: 0;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card img {
-    width: 50%;
-    height: 100%;
+    width: 45%;
+    height: 90%;
     margin-left: 5.5rem;
+    margin-bottom: 1rem;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos {
     width: 100%;
@@ -1432,7 +1434,8 @@ header .menu-leaguaje img {
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos .educacion-container-card-titulos-2 {
     font-size: 1.1rem;
-    margin: 0.5rem 6rem;
+    margin: 0.5rem 6.5rem;
+    text-align: center;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos .barra-progreso {
     margin: 1.5rem 0.8rem;
@@ -2021,7 +2024,7 @@ footer p {
   }
   footer p {
     margin: 0 5rem;
-    width: 100%;
+    width: 80%;
   }
 }
 .btn-subir {
@@ -2091,7 +2094,7 @@ footer p {
 @media screen and (max-width: 480px) {
   body .modal {
     left: 0;
-    top: 29rem;
+    top: 26rem;
     width: 100%;
     height: 450px;
   }
