@@ -163,3 +163,61 @@
         }
     }
 }
+
+//RESPONSIVE
+//CELUS PEQUES
+@media screen and (max-width: 480px) {
+    .contacto {
+        .contacto-titulo {
+            p {
+                font-size: 1.5rem;
+                margin-left: 1.5rem;
+                padding: 2px;
+            }
+        }
+
+    }
+    .contacto-container{
+        width: 100%;
+        margin: 0;
+        .contacto-container-descrip{
+            width: 90%;
+            margin: 0 2rem;
+            font-size: 1rem;
+            
+        }
+        .contacto-container-info{
+            flex-direction: column;
+            gap: 2rem;
+            .contacto-container-info-redes{
+                width: 90%;
+                margin: 0 2rem;
+                border-left: none;
+                overflow: hidden;
+                border-bottom: 1px solid grey;
+                .redes-titulo{
+                    margin: .5rem 4.5rem;
+                    font-size: 1.5rem;
+                    width: 100%;
+                }
+                .email{
+                    margin: 1.5rem 5rem;
+                    width: 100%;
+                }
+                .redes{
+                    margin: 0 7rem;
+                }
+            }
+            .contacto-container-info-msj{
+                margin: 0;
+                width: 100%;
+                .cotacto-container-info-msj-contenedor{
+                    margin: 0 2rem;
+                    width: 80%;
+                }
+            }
+
+        }
+
+    }
+}

@@ -7,3 +7,15 @@ footer{
     margin-top: .5rem;
     }
 }
+//RESPONSIVE
+//CELUS PEQUES
+@media screen and (max-width: 480px) {
+ footer{
+    margin: 0;
+    p{
+        margin: 0 5rem;
+        width: 100%;
+    }
+ }
+
+}

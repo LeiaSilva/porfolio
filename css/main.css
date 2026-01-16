@@ -1951,6 +1951,56 @@ header .menu-leaguaje img {
           transform: translateY(-12px) scale(1.02);
 }
 
+@media screen and (max-width: 480px) {
+  .contacto .contacto-titulo p {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 2px;
+  }
+  .contacto-container {
+    width: 100%;
+    margin: 0;
+  }
+  .contacto-container .contacto-container-descrip {
+    width: 90%;
+    margin: 0 2rem;
+    font-size: 1rem;
+  }
+  .contacto-container .contacto-container-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .contacto-container .contacto-container-info .contacto-container-info-redes {
+    width: 90%;
+    margin: 0 2rem;
+    border-left: none;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+  }
+  .contacto-container .contacto-container-info .contacto-container-info-redes .redes-titulo {
+    margin: 0.5rem 4.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .contacto-container .contacto-container-info .contacto-container-info-redes .email {
+    margin: 1.5rem 5rem;
+    width: 100%;
+  }
+  .contacto-container .contacto-container-info .contacto-container-info-redes .redes {
+    margin: 0 7rem;
+  }
+  .contacto-container .contacto-container-info .contacto-container-info-msj {
+    margin: 0;
+    width: 100%;
+  }
+  .contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor {
+    margin: 0 2rem;
+    width: 80%;
+  }
+}
 footer {
   border-top: 1px solid var(--primario);
   padding: 1rem;
@@ -1961,6 +2011,15 @@ footer p {
   margin-top: 0.5rem;
 }
 
+@media screen and (max-width: 480px) {
+  footer {
+    margin: 0;
+  }
+  footer p {
+    margin: 0 5rem;
+    width: 100%;
+  }
+}
 .btn-subir {
   position: fixed;
   bottom: 30px;
