@@ -76,7 +76,7 @@ body {
         padding: 1rem;
 
         .badge {
-          background:  #4f1e7e85;
+          background: #4f1e7e85;
           border: 1px solid var(--primario);
           padding: 6px 15px;
           border-radius: 50px;
@@ -125,46 +125,79 @@ body {
   }
 }
 
-  body.dark {
-    --fondo: rgb(55, 53, 62);
-    --estatico: rgb(238, 238, 238);
-    --text: black;
-    --header: radial-gradient(circle, rgba(132, 150, 189, 1) 0%, rgba(138, 83, 138, 1) 37%, rgba(55, 53, 62, 1) 94%);
+body.dark {
+  --fondo: rgb(55, 53, 62);
+  --estatico: rgb(238, 238, 238);
+  --text: black;
+  --header: radial-gradient(circle, rgba(132, 150, 189, 1) 0%, rgba(138, 83, 138, 1) 37%, rgba(55, 53, 62, 1) 94%);
+}
+
+/*-- PARTICIONES--*/
+@import "./fondo";
+@import "./header";
+@import "./inicio";
+@import "./totoro";
+@import "./sobreMi";
+@import "./educacion";
+@import "./skills";
+@import "./proyectos";
+@import "./contacto";
+@import "./_footer.scss";
+@import "./subirBtn";
+
+
+
+//animaciones del modal
+
+@keyframes aparecerYCrecer {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
   }
 
-  /*-- PARTICIONES--*/
-  @import "./fondo";
-  @import "./header";
-  @import "./inicio";
-  @import "./totoro";
-  @import "./sobreMi";
-  @import "./educacion";
-  @import "./skills";
-  @import "./proyectos";
-  @import "./contacto";
-  @import "./_footer.scss";
-  @import "./subirBtn";
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
+//RESPONSIVE GENERALES
+//CELUS PEQUES
+@media screen and (max-width: 480px) {
+  body {
+    .modal {
+      left: 0;
+      top: 29rem;
+      width: 100%;
+      height: 450px;
 
+      ion-icon {
+        left: 24.2rem;
+      }
 
-  //animaciones del modal
+      .proyecto-info {
+        width: 100%;
+        margin: 0;
 
-  @keyframes aparecerYCrecer {
-    0% {
-      opacity: 0;
-      transform: scale(0.5);
-    }
+        .proyecto-info-titulo {
+          font-size: 1.5rem;
+          margin: 2rem .2rem  1rem .2rem;
+        }
 
-    100% {
-      opacity: 1;
-      transform: scale(1);
+        .proyecto-info-descrip {
+          font-size: 1.2rem;
+        }
+        button{
+          margin: 1rem 6rem;
+          width: 50%;
+          text-align: center;
+           .modal-info-link{
+            margin: .5rem 2rem;
+           }
+        }
+        
+      }
     }
   }
 
-  //RESPONSIVE GENERALES
-  //CELUS PEQUES
-  @media screen and (max-width: 480px) {
-    html{
-      overflow-x: hidden;
-    }
-  }
+}
