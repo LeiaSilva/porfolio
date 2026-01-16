@@ -160,3 +160,11 @@ body {
       transform: scale(1);
     }
   }
+
+  //RESPONSIVE GENERALES
+  //CELUS PEQUES
+  @media screen and (max-width: 480px) {
+    html{
+      overflow-x: hidden;
+    }
+  }

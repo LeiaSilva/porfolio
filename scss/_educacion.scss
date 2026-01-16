@@ -100,8 +100,8 @@
 
                         .progreso-relleno {
                             height: 100%;
-                            width: 0 !important; 
-                            background-color: var(--primario); 
+                            width: 0 !important;
+                            background-color: var(--primario);
                             transition: width 1.5s ease-in-out;
                         }
 
@@ -128,8 +128,9 @@
                 img {
                     border-radius: 50%;
                 }
-                .barra-progreso{
-                    p{
+
+                .barra-progreso {
+                    p {
                         left: 19rem;
                     }
                 }
@@ -162,8 +163,9 @@
                 background-color: rgb(255, 255, 255);
                 border: 1.5px solid rgb(122, 122, 122);
                 border-radius: 8px;
-                .barra-progreso{
-                    p{
+
+                .barra-progreso {
+                    p {
                         left: 26rem;
                     }
                 }
@@ -176,6 +178,99 @@
     display: inline-block;
     width: 0;
     transition: width 1.5s ease-in-out;
-    overflow: hidden; 
+    overflow: hidden;
     white-space: nowrap;
+}
+
+//RESPONSIVE
+//CELUS PEQUEÑOS
+@media screen and (max-width: 480px) {
+    .educacion {
+        .educacion-titulo {
+            margin-top: 5rem;
+            position: relative;
+            left: 18.3rem;
+
+            p {
+                font-size: 1.3rem;
+                margin: 0 .3rem;
+            }
+        }
+
+        .educacion-container {
+            width: 100%;
+            margin: 0;
+            height: 400px;
+            margin-bottom: 2rem;
+
+            .back {
+                left: -0.3rem;
+                top: 135rem;
+            }
+
+            .next {
+                right: -0.3rem;
+                top: 135rem;
+
+            }
+
+            .educacion-container-cardBox {
+                height: 350px;
+                margin: 0 .8rem;
+                
+
+                .educacion-container-card {
+                    flex-direction: column-reverse;
+                    gap: 0;
+
+                    img {
+                        width: 50%;
+                        height: 100%;
+                        margin-left: 5.5rem;
+                        
+                    }
+
+                    .educacion-container-card-titulos {
+                        width: 100%;
+                        height: 350px;
+
+                        .educacion-container-card-titulos-1 {
+                            font-size: 1.3rem;
+                            margin: 1.5rem 1.5rem;
+                        }
+
+                        .educacion-container-card-titulos-2 {
+                            font-size: 1.1rem;
+                            margin: .5rem 6rem;
+                        }
+
+                        .barra-progreso {
+                            margin: 1.5rem .8rem;
+                            width: 90%;
+                            height: 20px;
+
+                            p {
+                                font-size: .8rem;
+                                position: absolute;
+                                left: 17rem;
+                            }
+                        }
+
+
+
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+
+
+
+
+
+
 }
