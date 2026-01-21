@@ -1028,10 +1028,10 @@ header .menu-leaguaje img {
             flex-direction: column-reverse;
   }
   .inicio .totoro {
-    margin-left: 5vh;
+    margin-left: 7vh;
   }
   .inicio .shadow {
-    margin-left: 11vh;
+    margin-left: 13vh;
   }
 }
 .sobreMi {
@@ -2152,7 +2152,7 @@ footer p {
     left: 0;
     top: 50%;
     width: 100%;
-    height: 50vh;
+    height: 55vh;
   }
   body .modal ion-icon {
     left: 90%;
@@ -2176,8 +2176,8 @@ footer p {
     margin: 0;
   }
   body .modal .proyecto-info button {
-    margin: 1vh 9vh;
-    width: 50%;
+    margin: 1vh 12vh;
+    width: 45%;
     text-align: center;
   }
   body .modal .proyecto-info button .modal-info-link {
