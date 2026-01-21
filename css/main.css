@@ -1237,8 +1237,8 @@ header .menu-leaguaje img {
     text-align: justify;
   }
   .sobreMi .sobreMi-container .sobreMi-container-texto .sobreMi-container-texto-cv {
-    margin: 0vh -18vh;
     overflow: hidden;
+    margin: 0 -5vh;
   }
   .sobreMi .sobreMi-container .sobreMi-container-img {
     width: 100%;
