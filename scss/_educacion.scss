@@ -19,11 +19,11 @@
     }
 
     .educacion-container {
-        width: 90%;
+        width: 100%;
         max-width: 900px;
         height: 300px;
         display: flex;
-        margin: 3rem auto;
+        margin: 2rem auto;
         align-items: center;
         overflow: hidden;
 
@@ -35,11 +35,11 @@
         }
 
         .back {
-            left: 5rem;
+            left: 10%;
         }
 
         .next {
-            right: 5rem;
+            right: 10%;
         }
 
 
@@ -187,74 +187,77 @@
 @media screen and (max-width: 480px) {
     .educacion {
         .educacion-titulo {
-            margin-top: 5rem;
+            margin-top: 2vh;
             position: relative;
-            left: 18.7rem;
+            left: 71%;
 
             p {
-                font-size: 1.3rem;
-                margin: 0 .3rem;
+                font-size: 1.2rem;
+                margin: 0 .2rem;
+                text-align: center;
             }
         }
 
         .educacion-container {
             width: 100%;
             margin: 0;
-            height: 400px;
-            margin-bottom: 2rem;
+            height: auto;
+            margin: 2vh 0;
 
             .back {
-                left: -0.3rem;
-                top: 135rem;
+                left: 0%;
             }
 
             .next {
-                right: -0.3rem;
-                top: 135rem;
+                right: 0%;
 
             }
 
             .educacion-container-cardBox {
-                height: 350px;
-                margin: 0 .9rem;
-                
+                height: auto;
+                margin: 0 1vh;
+
 
                 .educacion-container-card {
                     flex-direction: column-reverse;
                     gap: 0;
+                    width: 90%;
+                    height: auto;
+                    justify-content: center;
+                    align-items: center;
 
                     img {
-                        width: 45%;
-                        height: 80%;
-                        margin-left: 5.5rem;
-                        margin-bottom: 1rem;
-                        
+                        width: 30%;
+                        aspect-ratio: 1 / 1;
+                        object-fit: cover;
                     }
 
                     .educacion-container-card-titulos {
                         width: 100%;
-                        height: 350px;
+                        height: auto;
 
                         .educacion-container-card-titulos-1 {
                             font-size: 1.3rem;
-                            margin: 1.5rem 1.5rem;
+                            margin: 0 3vh;
+                            font-size: 1.2rem;
+                            width: 80%;
                         }
 
                         .educacion-container-card-titulos-2 {
-                            font-size: 1.1rem;
-                            margin: .5rem 6.5rem;
+                            font-size: 1.2rem;
+                            margin: 1vh 5vh;
                             text-align: center;
                         }
 
                         .barra-progreso {
-                            margin: 1.5rem .8rem;
+                            margin: 1vh 2vh;
                             width: 90%;
                             height: 20px;
 
                             p {
                                 font-size: .8rem;
                                 position: absolute;
-                                left: 17rem;
+                                left: 88%;
                             }
                         }
 
@@ -263,7 +266,7 @@
                     }
 
                 }
-                
+
 
             }
         }

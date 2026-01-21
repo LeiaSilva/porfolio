@@ -347,9 +347,9 @@ header .menu-leaguaje img {
   }
   header .menu-atajos {
     position: absolute;
-    top: 4rem;
+    top: 5%;
     width: 100%;
-    height: 92%;
+    height: 100%;
     z-index: 1;
     border-radius: 0;
   }
@@ -361,16 +361,18 @@ header .menu-leaguaje img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 6rem;
+    gap: 5rem;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5vh;
   }
   header .menu-atajos ul li {
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
     width: 60%;
     text-align: center;
     padding: 10px;
@@ -385,7 +387,7 @@ header .menu-leaguaje img {
     background-color: var(--primario);
   }
   header .menu-atajos ul li a {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   header .menu-modos {
     margin: 20px 16px;
@@ -568,40 +570,47 @@ header .menu-leaguaje img {
   .inicio .inicio-container {
     width: 100%;
     overflow: hidden;
-    height: 380px;
+    height: auto;
   }
   .inicio .inicio-container .inicio-container-titulo {
-    width: 100%;
-    -webkit-transform: translate(0.5rem, 0);
-            transform: translate(0.5rem, 0);
+    width: 90%;
+    margin-left: -5vh;
+    height: auto;
+    margin-bottom: 5vh;
   }
   .inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 2rem;
-    font-size: 3rem;
-    margin-left: 0.5rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0;
   }
   .inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre .estilo-soy {
-    margin-left: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre .estilo-soy span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .inicio .inicio-container .inicio-container-titulo .frase {
-    margin: 0;
-    margin-left: 1.2rem;
-    font-size: 1.8rem;
+    margin: 1vh;
+    font-size: 1.5rem;
+    text-align: center;
   }
   .inicio .inicio-container .inicio-container-titulo .inicio-container-titulo-nombre-parrafo {
-    margin: 0.5rem 1.7rem;
-    font-size: 1.5rem;
+    margin: 0;
+    font-size: 1.1rem;
+    padding: 1vh 0;
+    text-align: justify;
+    width: 90%;
   }
   .inicio .inicio-container .inicio-container-button {
-    margin: 1rem 8rem;
+    margin: 5vh 12vh;
     color: black;
+    font-size: 1rem;
+    width: 50%;
   }
   .inicio .inicio-animacion {
     width: 100%;
@@ -1019,10 +1028,10 @@ header .menu-leaguaje img {
             flex-direction: column-reverse;
   }
   .inicio .totoro {
-    margin-left: 4rem;
+    margin-left: 5vh;
   }
   .inicio .shadow {
-    margin-left: 7rem;
+    margin-left: 11vh;
   }
 }
 .sobreMi {
@@ -1169,7 +1178,7 @@ header .menu-leaguaje img {
 }
 @media screen and (max-width: 480px) {
   .sobreMi .sobreMi-titulo p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 0.2rem;
     padding: 2px;
   }
@@ -1178,35 +1187,58 @@ header .menu-leaguaje img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 750px;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .sobreMi .sobreMi-container .sobreMi-container-texto {
     width: 100%;
     overflow: hidden;
-    height: 600px;
-    margin-top: 1rem;
+    height: 50vh;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
   }
   .sobreMi .sobreMi-container .sobreMi-container-texto div {
     width: 100%;
     border-radius: 0;
     margin: 0;
+    overflow: hidden;
   }
   .sobreMi .sobreMi-container .sobreMi-container-texto div p {
-    margin: 0.5rem 1rem;
+    overflow: hidden;
+    margin: 1vh 3vh;
     font-size: 1rem;
+    text-align: justify;
   }
   .sobreMi .sobreMi-container .sobreMi-container-texto .sobreMi-container-texto-cv {
-    margin: 0;
-    position: absolute;
-    top: 112rem;
-    left: 8rem;
+    margin: 1vh -15vh;
+    overflow: hidden;
   }
   .sobreMi .sobreMi-container .sobreMi-container-img {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50vh;
   }
   .sobreMi .sobreMi-container .sobreMi-container-img img {
-    margin: 0.5rem 5rem;
     position: unset;
     border-radius: 10px 150px 10px 150px;
     width: 16rem;
@@ -1231,13 +1263,13 @@ header .menu-leaguaje img {
   margin-left: 5.5rem;
 }
 .educacion .educacion-container {
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3rem auto;
+  margin: 2rem auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1250,10 +1282,10 @@ header .menu-leaguaje img {
   cursor: pointer;
 }
 .educacion .educacion-container .back {
-  left: 5rem;
+  left: 10%;
 }
 .educacion .educacion-container .next {
-  right: 5rem;
+  right: 10%;
 }
 .educacion .educacion-container .educacion-container-cardBox {
   width: 90%;
@@ -1385,31 +1417,30 @@ header .menu-leaguaje img {
 
 @media screen and (max-width: 480px) {
   .educacion .educacion-titulo {
-    margin-top: 5rem;
+    margin-top: 2vh;
     position: relative;
-    left: 18.7rem;
+    left: 71%;
   }
   .educacion .educacion-titulo p {
-    font-size: 1.3rem;
-    margin: 0 0.3rem;
+    font-size: 1.2rem;
+    margin: 0 0.2rem;
+    text-align: center;
   }
   .educacion .educacion-container {
     width: 100%;
     margin: 0;
-    height: 400px;
-    margin-bottom: 2rem;
+    height: auto;
+    margin: 2vh 0;
   }
   .educacion .educacion-container .back {
-    left: -0.3rem;
-    top: 135rem;
+    left: 0%;
   }
   .educacion .educacion-container .next {
-    right: -0.3rem;
-    top: 135rem;
+    right: 0%;
   }
   .educacion .educacion-container .educacion-container-cardBox {
-    height: 350px;
-    margin: 0 0.9rem;
+    height: auto;
+    margin: 0 1vh;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card {
     -webkit-box-orient: vertical;
@@ -1417,35 +1448,45 @@ header .menu-leaguaje img {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 0;
+    width: 90%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card img {
-    width: 45%;
-    height: 80%;
-    margin-left: 5.5rem;
-    margin-bottom: 1rem;
+    width: 30%;
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos {
     width: 100%;
-    height: 350px;
+    height: auto;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos .educacion-container-card-titulos-1 {
     font-size: 1.3rem;
-    margin: 1.5rem 1.5rem;
+    margin: 0 3vh;
+    font-size: 1.2rem;
+    width: 80%;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos .educacion-container-card-titulos-2 {
-    font-size: 1.1rem;
-    margin: 0.5rem 6.5rem;
+    font-size: 1.2rem;
+    margin: 1vh 5vh;
     text-align: center;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos .barra-progreso {
-    margin: 1.5rem 0.8rem;
+    margin: 1vh 2vh;
     width: 90%;
     height: 20px;
   }
   .educacion .educacion-container .educacion-container-cardBox .educacion-container-card .educacion-container-card-titulos .barra-progreso p {
     font-size: 0.8rem;
     position: absolute;
-    left: 17rem;
+    left: 88%;
   }
 }
 .skills {
@@ -1545,7 +1586,7 @@ header .menu-leaguaje img {
 
 @media screen and (max-width: 480px) {
   .skills .skills-titulo p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 0.2rem;
     padding: 2px;
   }
@@ -1559,18 +1600,27 @@ header .menu-leaguaje img {
             flex-direction: column;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   .skills .skills-container .skills-container-1 .skills-container-nombre {
-    width: 100%;
-    border-left: none;
+    width: 90%;
+    margin-left: 2vh;
+    border-right: none;
     border-bottom: 2px solid grey;
-    margin: 1rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    height: 5vh;
+    padding: 3px;
   }
   .skills .skills-container .skills-container-1 .skills-container-nombre p {
-    left: 9.2rem;
-    top: 0;
-    padding: 2px;
+    width: 100%;
+    position: unset;
+    text-align: center;
   }
   .skills .skills-container .skills-container-1 .skills-container-lenguajes {
     width: 100%;
@@ -1781,12 +1831,12 @@ header .menu-leaguaje img {
 }
 @media screen and (max-width: 480px) {
   .proyectos .proyectos-titulo {
-    margin-top: 5rem;
+    margin-top: 2vh;
     position: relative;
-    left: 18.7rem;
+    left: 71%;
   }
   .proyectos .proyectos-titulo p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 0 0.3rem;
   }
   .proyectos .proyectos-container .proyectos-container-titulos {
@@ -1960,8 +2010,8 @@ header .menu-leaguaje img {
 
 @media screen and (max-width: 480px) {
   .contacto .contacto-titulo p {
-    font-size: 1.5rem;
-    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: 3vh;
     padding: 2px;
   }
   .contacto-container {
@@ -1970,7 +2020,7 @@ header .menu-leaguaje img {
   }
   .contacto-container .contacto-container-descrip {
     width: 90%;
-    margin: 0 2rem;
+    margin: 1rem auto;
     font-size: 1rem;
   }
   .contacto-container .contacto-container-info {
@@ -1982,29 +2032,34 @@ header .menu-leaguaje img {
   }
   .contacto-container .contacto-container-info .contacto-container-info-redes {
     width: 90%;
-    margin: 0 2rem;
     border-left: none;
+    margin: 0 auto;
     overflow: hidden;
     border-bottom: 1px solid grey;
   }
   .contacto-container .contacto-container-info .contacto-container-info-redes .redes-titulo {
-    margin: 0.5rem 4.5rem;
+    text-align: center;
+    -webkit-transform: translate(-10.5rem, -1rem);
+            transform: translate(-10.5rem, -1rem);
     font-size: 1.5rem;
     width: 100%;
   }
   .contacto-container .contacto-container-info .contacto-container-info-redes .email {
-    margin: 1.5rem 5rem;
+    -webkit-transform: translate(-10rem, -0.5rem);
+            transform: translate(-10rem, -0.5rem);
     width: 100%;
   }
   .contacto-container .contacto-container-info .contacto-container-info-redes .redes {
-    margin: 0 7rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
   .contacto-container .contacto-container-info .contacto-container-info-msj {
     margin: 0;
     width: 100%;
   }
   .contacto-container .contacto-container-info .contacto-container-info-msj .cotacto-container-info-msj-contenedor {
-    margin: 0 2rem;
+    margin: 0 auto;
     width: 80%;
   }
 }
@@ -2023,8 +2078,9 @@ footer p {
     margin: 0;
   }
   footer p {
-    margin: 0 5rem;
-    width: 80%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 .btn-subir {
@@ -2094,12 +2150,14 @@ footer p {
 @media screen and (max-width: 480px) {
   body .modal {
     left: 0;
-    top: 26rem;
+    top: 50%;
     width: 100%;
-    height: 450px;
+    height: 50vh;
   }
   body .modal ion-icon {
-    left: 24.2rem;
+    left: 90%;
+    margin: 0.5vh;
+    font-size: 1.5rem;
   }
   body .modal .proyecto-info {
     width: 100%;
@@ -2107,17 +2165,22 @@ footer p {
   }
   body .modal .proyecto-info .proyecto-info-titulo {
     font-size: 1.5rem;
-    margin: 2rem 0.2rem 1rem 0.2rem;
+    margin: 3vh 0;
+    width: 90%;
+    text-align: center;
   }
   body .modal .proyecto-info .proyecto-info-descrip {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    width: 90%;
+    text-align: justify;
+    margin: 0;
   }
   body .modal .proyecto-info button {
-    margin: 1rem 6rem;
+    margin: 1vh 9vh;
     width: 50%;
     text-align: center;
   }
   body .modal .proyecto-info button .modal-info-link {
-    margin: 0.5rem 2rem;
+    margin: 1vh 3vh;
   }
 }

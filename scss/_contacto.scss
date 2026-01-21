@@ -170,8 +170,8 @@
     .contacto {
         .contacto-titulo {
             p {
-                font-size: 1.5rem;
-                margin-left: 1.5rem;
+                font-size: 1.2rem;
+                margin-left: 3vh;
                 padding: 2px;
             }
         }
@@ -182,7 +182,7 @@
         margin: 0;
         .contacto-container-descrip{
             width: 90%;
-            margin: 0 2rem;
+            margin: 1rem auto;
             font-size: 1rem;
             
         }
@@ -191,28 +191,32 @@
             gap: 2rem;
             .contacto-container-info-redes{
                 width: 90%;
-                margin: 0 2rem;
                 border-left: none;
+                margin: 0 auto;
                 overflow: hidden;
                 border-bottom: 1px solid grey;
                 .redes-titulo{
-                    margin: .5rem 4.5rem;
+                    text-align: center;
+                    transform: translate(-10.5rem, -1rem);
                     font-size: 1.5rem;
                     width: 100%;
                 }
+                    
                 .email{
-                    margin: 1.5rem 5rem;
+                    transform: translate(-10rem , -.5rem);
                     width: 100%;
                 }
                 .redes{
-                    margin: 0 7rem;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
                 }
             }
             .contacto-container-info-msj{
                 margin: 0;
                 width: 100%;
                 .cotacto-container-info-msj-contenedor{
-                    margin: 0 2rem;
+                    margin: 0 auto;
                     width: 80%;
                 }
             }

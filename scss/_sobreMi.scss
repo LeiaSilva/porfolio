@@ -60,7 +60,8 @@
                 background-color: var(--primario);
                 cursor: pointer;
                 animation: pulse 1s infinite;
-                a{
+
+                a {
                     text-decoration: none;
                     color: var(--text);
                 }
@@ -141,54 +142,71 @@
 
 //RESPONSIVE
 //CELUS PEQUEÑOS
-@media screen and (max-width: 480px){
-    .sobreMi{
-        .sobreMi-titulo{
-            p{
-                font-size: 1.5rem;
+@media screen and (max-width: 480px) {
+    .sobreMi {
+        .sobreMi-titulo {
+            p {
+                font-size: 1.2rem;
                 margin-left: .2rem;
                 padding: 2px;
             }
 
         }
-        .sobreMi-container{
+
+        .sobreMi-container {
             flex-direction: column;
-            height: 750px;
-            .sobreMi-container-texto{
+            height: auto;
+            justify-content: center;
+            align-items: center;
+
+            .sobreMi-container-texto {
                 width: 100%;
                 overflow: hidden;
-                height: 600px;
-                margin-top: 1rem;
-                div{
+                height: 50vh;
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                div {
                     width: 100%;
                     border-radius: 0;
                     margin: 0;
-                    p{
-                        margin: .5rem 1rem;
+                    overflow: hidden;
+
+                    p {
+                        overflow: hidden;
+                        margin: 1vh 3vh;
                         font-size: 1rem;
+                        text-align: justify;
                     }
                 }
-                 .sobreMi-container-texto-cv{
-                    margin: 0;
-                    position: absolute;
-                    top: 112rem;
-                    left: 8rem;
-                 }
+
+                .sobreMi-container-texto-cv {
+                    margin: 1vh -15vh ;
+                    overflow: hidden;
+                    
+                }
 
             }
-             .sobreMi-container-img{
+
+            .sobreMi-container-img {
                 width: 100%;
+                display: flex;
                 margin: 0;
-                img{
-                    margin: .5rem 5rem;
+                justify-content: center;
+                align-items: center;
+                height: 50vh;
+
+                img {
                     position: unset;
                     border-radius: 10px 150px 10px 150px;
                     width: 16rem;
-                    
+
                 }
-             }
+            }
         }
-        
+
 
     }
 }
