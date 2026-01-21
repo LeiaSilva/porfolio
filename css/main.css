@@ -24,8 +24,8 @@ body .modal {
   height: 300px;
   width: 50%;
   position: fixed;
-  left: 20rem;
-  top: 9rem;
+  left: 25%;
+  top: 25%;
   display: none;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
@@ -43,15 +43,16 @@ body .modal {
   border-radius: 15px;
 }
 body .modal ion-icon {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   position: relative;
-  left: 40rem;
+  left: 95%;
+  margin: 1vh;
   cursor: pointer;
 }
 body .modal .proyecto-info {
   width: 90%;
   height: 90%;
-  margin-top: 2rem;
+  margin: 1vh;
   overflow: hidden;
 }
 body .modal .proyecto-info .proyecto-info-titulo {
@@ -60,7 +61,8 @@ body .modal .proyecto-info .proyecto-info-titulo {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  margin-left: 5.5rem;
+  text-align: center;
+  margin: 2vh 0;
 }
 body .modal .proyecto-info .proyecto-info-descrip {
   font-size: 1rem;
@@ -68,7 +70,7 @@ body .modal .proyecto-info .proyecto-info-descrip {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: italic;
-  margin: 0.5rem;
+  text-align: justify;
 }
 body .modal .proyecto-info .proyecto-info-tec {
   display: -webkit-box;
@@ -98,8 +100,8 @@ body .modal .proyecto-info .proyecto-info-tec .badge:hover {
           transform: translateY(-2px) scale(1.02);
 }
 body .modal .proyecto-info button {
-  margin: 1.5rem 13rem;
-  width: 28%;
+  margin: 5vh 20vh;
+  width: 50%;
   height: 50px;
   overflow: hidden;
   border-radius: 20px;
@@ -118,12 +120,12 @@ body .modal .proyecto-info button .modal-info-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 1.3rem;
   text-decoration: none;
+  margin: 0 15vh;
   color: black;
 }
 body .modal .proyecto-info button .modal-info-link .links {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: black;
   position: static;
   margin: 0rem 0.4rem;
@@ -349,7 +351,7 @@ header .menu-leaguaje img {
     position: absolute;
     top: 8%;
     width: 100%;
-    height: 90%;
+    height: 92%;
     z-index: 1;
     border-radius: 0;
   }
@@ -467,7 +469,7 @@ header .menu-leaguaje img {
   margin-left: 2rem;
 }
 .inicio .inicio-container .inicio-container-button {
-  margin: 6rem 16rem;
+  margin: 15vh 40vh;
   height: 40px;
   width: 150px;
   border-radius: 10px;
@@ -507,7 +509,7 @@ header .menu-leaguaje img {
 }
 .inicio .inicio-animacion {
   width: 55%;
-  height: 550px;
+  height: 75vh;
 }
 
 @-webkit-keyframes typing {
@@ -615,6 +617,7 @@ header .menu-leaguaje img {
   .inicio .inicio-animacion {
     width: 100%;
     margin: 0;
+    overflow: hidden;
   }
 }
 .inicio {
@@ -623,6 +626,7 @@ header .menu-leaguaje img {
   display: flex;
 }
 .inicio .totoro {
+  overflow: hidden;
   width: 300px;
   height: 450px;
   overflow: hidden;
@@ -1061,6 +1065,12 @@ header .menu-leaguaje img {
   display: -ms-flexbox;
   display: flex;
   height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .sobreMi .sobreMi-container .sobreMi-container-texto {
   width: 50%;
@@ -1084,7 +1094,7 @@ header .menu-leaguaje img {
 }
 .sobreMi .sobreMi-container .sobreMi-container-texto .sobreMi-container-texto-cv {
   position: relative;
-  left: 15.5rem;
+  left: 40%;
   bottom: 1.8rem;
   height: 40px;
   width: 180px;
@@ -1129,12 +1139,18 @@ header .menu-leaguaje img {
   margin: 5px;
   overflow: hidden;
   border-right: 1px solid var(--primario);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .sobreMi .sobreMi-container .sobreMi-container-img img {
-  width: 20rem;
-  position: relative;
-  left: 8rem;
-  top: 1rem;
+  width: 25rem;
 }
 
 @-webkit-keyframes pulse {
@@ -1252,7 +1268,7 @@ header .menu-leaguaje img {
   padding: 8px;
   border-radius: 20px 0 0 20px;
   position: relative;
-  left: 65rem;
+  left: 80%;
 }
 .educacion .educacion-titulo p {
   font-family: "Sour Gummy", sans-serif;
@@ -1660,7 +1676,7 @@ header .menu-leaguaje img {
   padding: 8px;
   border-radius: 20px 0 0 20px;
   position: relative;
-  left: 65rem;
+  left: 80%;
 }
 .proyectos .proyectos-titulo p {
   font-family: "Sour Gummy", sans-serif;
@@ -1735,28 +1751,46 @@ header .menu-leaguaje img {
           animation: aparecerCard 1.5s ease forwards;
   cursor: pointer;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .proyectos .proyectos-container .proyectos-container-cards .proyectos-container-cards-box .overlay-construccion {
   background-color: rgba(49, 49, 49, 0.459);
-  height: 180px;
+  height: 20vh;
   overflow: hidden;
 }
 .proyectos .proyectos-container .proyectos-container-cards .proyectos-container-cards-box .overlay-construccion ion-icon {
   font-size: 2rem;
   color: white;
   position: relative;
-  left: 10.5rem;
-  top: 5rem;
+  left: 45%;
+  top: 45%;
   -webkit-animation: rotar 2s linear infinite;
           animation: rotar 2s linear infinite;
 }
 .proyectos .proyectos-container .proyectos-container-cards .proyectos-container-cards-box .card-img {
   background-color: var(--primario);
-  height: 180px;
+  height: 20vh;
+  width: 50vh;
   overflow: hidden;
 }
 .proyectos .proyectos-container .proyectos-container-cards .proyectos-container-cards-box .card-img img {
-  height: 180px;
+  height: 20vh;
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .proyectos .proyectos-container .proyectos-container-cards .proyectos-container-cards-box p {
   margin: 0rem 1.5rem;
@@ -1890,6 +1924,7 @@ header .menu-leaguaje img {
   border-bottom: 1px solid var(--primario);
   padding-bottom: 1rem;
   width: 90%;
+  text-align: center;
 }
 .contacto-container .contacto-container-info {
   display: -webkit-box;
@@ -2069,8 +2104,7 @@ footer {
   margin: 1rem 2rem;
 }
 footer p {
-  margin-left: 35rem;
-  margin-top: 0.5rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {

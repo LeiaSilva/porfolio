@@ -6,7 +6,7 @@
         padding: 8px;
         border-radius: 20px 0 0 20px;
         position: relative;
-        left: 65rem;
+        left: 80%;
 
         p {
             font-family: "Sour Gummy", sans-serif;
@@ -76,29 +76,37 @@
                 animation: aparecerCard 1.5s ease forwards;
                 cursor: pointer;
                 overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 .overlay-construccion {
                     background-color: rgba(49, 49, 49, 0.459);
-                    height: 180px;
+                    height: 20vh;
                     overflow: hidden;
 
                     ion-icon {
                         font-size: 2rem;
                         color: white;
                         position: relative;
-                        left: 10.5rem;
-                        top: 5rem;
+                        left: 45%;
+                        top: 45%;
                         animation: rotar 2s linear infinite;
                     }
                 }
 
                 .card-img {
                     background-color: var(--primario);
-                    height: 180px;
+                    height: 20vh;
+                    width: 50vh;
                     overflow: hidden;
 
                     img {
-                        height: 180px;
+                        height: 20vh;
+                        width: 100%;
+                        aspect-ratio: 1 / 1;
+                        object-fit: cover;
                     }
                 }
 

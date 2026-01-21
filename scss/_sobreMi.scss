@@ -21,6 +21,8 @@
     .sobreMi-container {
         display: flex;
         height: 500px;
+        align-items: center;
+        justify-content: center;
 
         .sobreMi-container-texto {
             width: 50%;
@@ -46,7 +48,7 @@
 
             .sobreMi-container-texto-cv {
                 position: relative;
-                left: 15.5rem;
+                left: 40%;
                 bottom: 1.8rem;
                 height: 40px;
                 width: 180px;
@@ -98,12 +100,12 @@
             margin: 5px;
             overflow: hidden;
             border-right: 1px solid var(--primario);
+            align-items: center;
+            justify-content: center;
+            display: flex;
 
             img {
-                width: 20rem;
-                position: relative;
-                left: 8rem;
-                top: 1rem;
+                width: 25rem;
             }
 
         }
@@ -183,9 +185,9 @@
                 }
 
                 .sobreMi-container-texto-cv {
-                    margin: 0vh -18vh ;
+                    margin: 0vh -18vh;
                     overflow: hidden;
-                    
+
                 }
 
             }

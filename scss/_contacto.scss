@@ -6,6 +6,7 @@
         background-color: var(--primario);
         padding: 8px;
         border-radius: 0 20px 20px 0;
+        
 
         p {
             font-family: "Sour Gummy", sans-serif;
@@ -32,6 +33,7 @@
         border-bottom: 1px solid var(--primario);
         padding-bottom: 1rem;
         width: 90%;
+        text-align: center;
     }
 
     .contacto-container-info {
@@ -40,6 +42,7 @@
         .contacto-container-info-redes {
             width: 50%;
             height: 180px;
+            
 
             .redes-titulo {
                 font-size: 1.8rem;

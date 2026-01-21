@@ -13,7 +13,7 @@ const misProyectos = [
         estado: "Finalizado",
         descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
         imagen: "./assets/bulkPage.png",
-        link: "https://github.com/LeiaSilva/porfolio/settings/pages",
+        link: "https://leiasilva.github.io/bulk/",
         tecnologias: ["HTML", "CSS","SASS", "Responsive", "JS"]
     },
     {
@@ -23,7 +23,7 @@ const misProyectos = [
         estado: "Finalizado",
         descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
         imagen: "./assets/porfolioPage.png",
-        link: "https://github.com/LeiaSilva/porfolio/settings/pages",
+        link: "https://leiasilva.github.io/porfolio/",
         tecnologias: ["HTML", "CSS", "SASS","Responsive", "JS"]
     },
     {

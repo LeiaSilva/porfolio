@@ -69,7 +69,7 @@
         }
 
         .inicio-container-button {
-            margin: 6rem 16rem;
+            margin: 15vh 40vh;
             height: 40px;
             width: 150px;
             border-radius: 10px;
@@ -118,7 +118,7 @@
 
     .inicio-animacion {
         width: 55%;
-        height: 550px;
+        height: 75vh;
     }
 }
 
@@ -232,6 +232,7 @@
         .inicio-animacion {
             width: 100%;
             margin: 0;
+            overflow: hidden;
         }
     }
 }
