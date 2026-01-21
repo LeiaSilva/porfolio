@@ -11,7 +11,7 @@ const misProyectos = [
         titulo: "Aplicación web ventas de muebles",
         categoria: "Últimos",
         estado: "Finalizado",
-        descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
+        descripción: "",
         imagen: "./assets/bulkPage.png",
         link: "https://leiasilva.github.io/bulk/",
         tecnologias: ["HTML", "CSS","SASS", "Responsive", "JS"]
