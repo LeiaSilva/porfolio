@@ -16,6 +16,7 @@
                 font-style: normal;
                 font-size: 4.5rem;
                 overflow: hidden;
+                color: var(--bordes);
 
 
 
@@ -25,6 +26,7 @@
                     font-weight: 200;
                     font-style: italic;
                     font-size: 3rem;
+                    color: var(--bordes);
 
                     span {
                         font-family: "Meow Script", cursive;
@@ -64,6 +66,7 @@
                 font-size: 1.3rem;
                 margin-top: .5rem;
                 margin-left: 2rem;
+                color: var(--bordes);
             }
 
         }

@@ -5,6 +5,7 @@
   --fondo: rgb(238, 238, 238);
   --primario: rgb(114, 106, 149);
   --estatico: rgb(127, 120, 153);
+  --bordes:black ;
   --text: rgb(255, 255, 255);
   --header: radial-gradient(circle, rgba(204, 163, 200, 1) 0%, rgba(196, 180, 216, 1) 38%, rgba(235, 238, 240, 1) 100%);
 }
@@ -23,7 +24,7 @@ body {
   .modal {
     background-color: white;
     margin: 0;
-    height: 300px;
+    height: auto;
     width: 50%;
     position: fixed;
     left: 25%;
@@ -130,8 +131,9 @@ body {
 }
 
 body.dark {
-  --fondo: rgb(55, 53, 62);
-  --estatico: rgb(238, 238, 238);
+  --fondo: rgb(18, 18, 18);
+  --bordes:rgb(200, 200, 205);
+  --estatico: rgba(78, 78, 78, 0.973);
   --text: black;
   --header: radial-gradient(circle, rgba(132, 150, 189, 1) 0%, rgba(138, 83, 138, 1) 37%, rgba(55, 53, 62, 1) 94%);
 }

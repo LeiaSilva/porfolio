@@ -8,6 +8,7 @@ header {
         cursor: pointer;
         transform: rotateY(0);
         transition: transform 1s ease;
+        color: var(--bordes);
     }
 
     .menu-atajos {
@@ -53,6 +54,7 @@ header {
         .moon {
             font-size: 1.8rem;
             animation: float 1.2s linear infinite;
+            color: var(--bordes);
         }
     }
 

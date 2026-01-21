@@ -11,39 +11,39 @@ const misProyectos = [
         titulo: "Aplicación web ventas de muebles",
         categoria: "Últimos",
         estado: "Finalizado",
-        descripción: "",
+        descripción: "Diseñé una aplicación web para automatizar la venta de muebles. El diseño fue pensado con estetica limpia y profesional, prorizando una navegacion intuitiva y una experiencia de usuario fluida para todos los dispositivos. ",
         imagen: "./assets/bulkPage.png",
         link: "https://leiasilva.github.io/bulk/",
         tecnologias: ["HTML", "CSS","SASS", "Responsive", "JS"]
     },
     {
         id: 2,
-        titulo: "Porfolio",
+        titulo: "Portfolio",
         categoria: "Últimos",
         estado: "Finalizado",
-        descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
+        descripción: "Diseñé mi portfolio profesional con el objetivo de fusionar creatividad y funcionalidad. Implementé animaciones fluidas e ilustraciones vectoriales creadas íntegramente con código, priorizando siempre la adaptabilidad y una interfaz intuitiva. Mi enfoque está en ofrecer una experiencia de usuario cómoda, simple y profesional en cualquier dispositivo, sin descuidar el diseño.",
         imagen: "./assets/porfolioPage.png",
         link: "https://leiasilva.github.io/porfolio/",
         tecnologias: ["HTML", "CSS", "SASS","Responsive", "JS"]
     },
     {
         id: 3,
-        titulo: "",
+        titulo: "Aplicación de organización personal",
         categoria: "Todos",
         estado: "EnCurso",
-        descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
+        descripción: " Trabajando en ello..",
         imagen: "https://via.placeholder.com/400x300?text=Coming+Soon",
-        link: "",
+        link: "#",
         tecnologias: ["", ""]
     },
     {
         id: 4,
-        titulo: "",
+        titulo: "Tienda de galletas",
         categoria: "Todos",
         estado: "EnCurso",
-        descripción: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, nisi vel consectetur interdum, lacus nisl aliquam nunc.",
+        descripción: "Trabajando en ello..",
         imagen: "https://via.placeholder.com/400x300?text=Coming+Soon",
-        link: "",
+        link: "#",
         tecnologias: ["", ""]
     },
 

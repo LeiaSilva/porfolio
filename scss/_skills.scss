@@ -27,7 +27,7 @@
             display: flex;
 
             .skills-container-nombre {
-                border-right: 2px solid grey;
+                border-right: 2px solid var(--bordes);
                 width: 20%;
 
                 p {
@@ -39,6 +39,7 @@
                     position: relative;
                     left: 3rem;
                     top: 3rem;
+                    color: var(--bordes);
                 }
             }
 
@@ -47,7 +48,7 @@
                 display: flex;
 
                 .skills-container-lenguajes-box {
-                    border: 2px solid rgb(80, 77, 77);
+                    border: 2px solid var(--bordes);
                     width: 25%;
                     height: 100px;
                     margin: 10px;
@@ -82,6 +83,7 @@
                         font-weight: 500;
                         font-style: normal;
                         font-size: 1.2rem;
+                        color: var(--bordes);
 
                     }
 
@@ -118,7 +120,7 @@
                     width: 90%;
                     margin-left: 2vh;
                     border-right: none;
-                    border-bottom: 2px solid grey;
+                    border-bottom: 2px solid var(--bordes);
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;

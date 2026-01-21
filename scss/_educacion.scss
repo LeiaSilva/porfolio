@@ -30,7 +30,7 @@
         ion-icon {
             position: absolute;
             font-size: 2.5rem;
-            color: black;
+            color: var(--bordes);
             cursor: pointer;
         }
 
@@ -88,7 +88,7 @@
                     }
 
                     .barra-progreso {
-                        border: 1.5px solid rgba(95, 95, 95, 0.884);
+                        border: 1px solid rgba(0, 0, 0, 0.884);
                         border-radius: 10px;
                         width: 80%;
                         height: 20px;

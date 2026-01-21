@@ -6,7 +6,7 @@
         background-color: var(--primario);
         padding: 8px;
         border-radius: 0 20px 20px 0;
-        
+
 
         p {
             font-family: "Sour Gummy", sans-serif;
@@ -34,6 +34,7 @@
         padding-bottom: 1rem;
         width: 90%;
         text-align: center;
+        color: var(--bordes);
     }
 
     .contacto-container-info {
@@ -42,12 +43,18 @@
         .contacto-container-info-redes {
             width: 50%;
             height: 180px;
-            
+
+
 
             .redes-titulo {
                 font-size: 1.8rem;
                 margin-left: 10rem;
                 margin-top: 1.5rem;
+                font-family: "Sour Gummy", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                color: var(--bordes);
             }
 
             .email {
@@ -56,12 +63,19 @@
                 margin-left: 13rem;
                 margin-top: 1rem;
 
+
                 ion-icon {
                     font-size: 1.3rem;
+                    color: var(--bordes);
                 }
 
                 p {
                     font-size: 1.1rem;
+                    font-family: "Sour Gummy", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    color: var(--bordes);
                 }
             }
 
@@ -76,7 +90,7 @@
                     margin: 1rem;
                     border-radius: 10px;
                     background-color: var(--primario);
-                    color: black;
+                    color: var(--bordes);
                     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
                     &:hover {
@@ -86,6 +100,11 @@
 
                 a {
                     font-style: none;
+                    font-family: "Sour Gummy", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    color: var(--bordes);
 
                 }
             }
@@ -108,10 +127,20 @@
                     font-size: 1.8rem;
                     font-style: inherit;
                     margin: .2rem 0rem;
+                    font-family: "Sour Gummy", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    color: var(--bordes);
                 }
 
                 .-descrip {
                     font-size: 1rem;
+                    font-family: "Sour Gummy", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    color: var(--bordes);
                 }
 
                 button {
@@ -125,6 +154,7 @@
                     justify-content: center;
                     cursor: pointer;
                     animation: pulse 1s infinite;
+                    color: var(--bordes);
 
                     &:hover {
                         box-shadow:
@@ -146,14 +176,19 @@
 
                     .-btn {
                         text-decoration: none;
-                        color: black;
+                        color: var(--bordes);
                         font-size: 1rem;
                         margin-left: .8rem;
+                        font-family: "Sour Gummy", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 300;
+                        font-style: normal;
 
                     }
 
                     ion-icon {
                         font-size: 1.2rem;
+                        color: var(--bordes);
                     }
 
 
@@ -180,45 +215,53 @@
         }
 
     }
-    .contacto-container{
+
+    .contacto-container {
         width: 100%;
         margin: 0;
-        .contacto-container-descrip{
+
+        .contacto-container-descrip {
             width: 90%;
             margin: 1rem auto;
             font-size: 1rem;
-            
+
         }
-        .contacto-container-info{
+
+        .contacto-container-info {
             flex-direction: column;
             gap: 2rem;
-            .contacto-container-info-redes{
+
+            .contacto-container-info-redes {
                 width: 90%;
                 border-left: none;
                 margin: 0 auto;
                 overflow: hidden;
                 border-bottom: 1px solid grey;
-                .redes-titulo{
+
+                .redes-titulo {
                     text-align: center;
                     transform: translate(-10.5rem, -1rem);
                     font-size: 1.5rem;
                     width: 100%;
                 }
-                    
-                .email{
-                    transform: translate(-10rem , -.5rem);
+
+                .email {
+                    transform: translate(-10rem, -.5rem);
                     width: 100%;
                 }
-                .redes{
+
+                .redes {
                     width: 100%;
                     margin: 0 auto;
                     text-align: center;
                 }
             }
-            .contacto-container-info-msj{
+
+            .contacto-container-info-msj {
                 margin: 0;
                 width: 100%;
-                .cotacto-container-info-msj-contenedor{
+
+                .cotacto-container-info-msj-contenedor {
                     margin: 0 auto;
                     width: 80%;
                 }
