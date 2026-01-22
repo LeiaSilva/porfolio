@@ -5,6 +5,10 @@
         background-color: var(--primario);
         padding: 8px;
         border-radius: 0 20px 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
         p {
             font-family: "Sour Gummy", sans-serif;
@@ -12,7 +16,6 @@
             font-weight: 300;
             font-style: normal;
             font-size: 1.5rem;
-            margin-left: 7rem;
         }
     }
 
@@ -104,7 +107,7 @@
 
             p {
                 font-size: 1.2rem;
-                margin-left: 5vh;
+                margin-left:0;
                 padding: 2px;
             }
         }

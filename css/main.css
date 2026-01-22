@@ -1122,6 +1122,12 @@ header .menu-leaguaje img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 0 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sobreMi .sobreMi-titulo p {
   font-family: "Sour Gummy", sans-serif;
@@ -1129,7 +1135,7 @@ header .menu-leaguaje img {
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
-  margin-left: 5.5rem;
+  margin: 0;
 }
 .sobreMi .sobreMi-container {
   display: -webkit-box;
@@ -1289,7 +1295,6 @@ header .menu-leaguaje img {
 @media screen and (max-width: 650px) {
   .sobreMi .sobreMi-titulo p {
     font-size: 1.2rem;
-    margin-left: 3vh;
     padding: 2px;
   }
   .sobreMi .sobreMi-container {
@@ -1544,7 +1549,7 @@ header .menu-leaguaje img {
   }
   .educacion .educacion-titulo p {
     font-size: 1.2rem;
-    margin: 0 0.2rem;
+    margin: 0;
     text-align: center;
   }
   .educacion .educacion-container {
@@ -1626,6 +1631,16 @@ header .menu-leaguaje img {
   background-color: var(--primario);
   padding: 8px;
   border-radius: 0 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 .skills .skills-titulo p {
   font-family: "Sour Gummy", sans-serif;
@@ -1633,7 +1648,6 @@ header .menu-leaguaje img {
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
-  margin-left: 7rem;
 }
 .skills .skills-container {
   height: 510px;
@@ -1719,7 +1733,7 @@ header .menu-leaguaje img {
 @media screen and (max-width: 650px) {
   .skills .skills-titulo p {
     font-size: 1.2rem;
-    margin-left: 5vh;
+    margin-left: 0;
     padding: 2px;
   }
   .skills .skills-container {
@@ -1793,6 +1807,16 @@ header .menu-leaguaje img {
   border-radius: 20px 0 0 20px;
   position: relative;
   left: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 .proyectos .proyectos-titulo p {
   font-family: "Sour Gummy", sans-serif;
@@ -1800,7 +1824,6 @@ header .menu-leaguaje img {
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
-  margin-left: 5.5rem;
 }
 .proyectos .proyectos-container {
   height: 600px;
@@ -1988,7 +2011,7 @@ header .menu-leaguaje img {
   }
   .proyectos .proyectos-titulo p {
     font-size: 1.2rem;
-    margin: 0 3vh;
+    margin: 0;
   }
   .proyectos .proyectos-container .proyectos-container-titulos {
     margin: 1rem 0rem;
@@ -2020,6 +2043,16 @@ header .menu-leaguaje img {
   background-color: var(--primario);
   padding: 8px;
   border-radius: 0 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 .contacto .contacto-titulo p {
   font-family: "Sour Gummy", sans-serif;
@@ -2027,7 +2060,6 @@ header .menu-leaguaje img {
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
-  margin-left: 7rem;
 }
 
 .contacto-container .contacto-container-descrip {
@@ -2196,7 +2228,6 @@ header .menu-leaguaje img {
 @media screen and (max-width: 650px) {
   .contacto .contacto-titulo p {
     font-size: 1.2rem;
-    margin-left: 3vh;
     padding: 2px;
   }
   .contacto-container {
