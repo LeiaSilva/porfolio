@@ -101,21 +101,23 @@
 @media screen and (max-width: 650px) {
     .skills {
         .skills-titulo {
+
             p {
                 font-size: 1.2rem;
-                margin-left: .2rem;
+                margin-left: 5vh;
                 padding: 2px;
             }
         }
 
         .skills-container {
             height: auto;
+
             .skills-container-1 {
                 flex-direction: column;
                 margin: 0;
                 width: 100%;
                 height: auto;
-                
+
                 .skills-container-nombre {
                     width: 90%;
                     margin-left: 2vh;
@@ -159,7 +161,7 @@
                             margin: 0;
                             text-align: center;
                             position: relative;
-                            top:2rem;
+                            top: 2rem;
                             right: 4rem;
                             overflow: hidden;
                         }

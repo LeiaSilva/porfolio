@@ -26,14 +26,24 @@
 
         .sobreMi-container-texto {
             width: 50%;
-            height: 500px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
 
             div {
                 width: 90%;
-                height: 420px;
-                margin: 10px 20px;
+                height: auto;
+                margin: 2vh 1vh;
+                padding: 3vh;
                 background-color: var(--estatico);
                 border-radius: 100px 200px 100px 200px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 p {
                     font-family: "Sour Gummy", sans-serif;
@@ -41,15 +51,12 @@
                     font-weight: 300;
                     font-style: normal;
                     font-size: 1rem;
+                    margin: 1vh 10vh;
                     color: var(--bordes);
-                    margin: 1.6rem 4.5rem;
                 }
             }
 
             .sobreMi-container-texto-cv {
-                position: relative;
-                left: 40%;
-                bottom: -1%;
                 height: 40px;
                 width: 180px;
                 border-radius: 10px;
@@ -144,12 +151,12 @@
 
 //RESPONSIVE
 //CELUS PEQUEÑOS
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 650px) {
     .sobreMi {
         .sobreMi-titulo {
             p {
                 font-size: 1.2rem;
-                margin-left: .2rem;
+                margin-left: 3vh;
                 padding: 2px;
             }
 
@@ -172,9 +179,13 @@
 
                 div {
                     width: 100%;
+                    height: auto;
                     border-radius: 0;
                     margin: 0;
                     overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
                     p {
                         overflow: hidden;
@@ -212,7 +223,6 @@
 
     }
 }
-//Celus grandes
-@media screen and (max-width:1366px){
 
-}
+//Celus grandes
+@media screen and (max-width:1366px) {}

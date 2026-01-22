@@ -1,13 +1,14 @@
 .inicio {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     .totoro {
         overflow: hidden;
         width: 300px;
         height: 450px;
+        margin: 0 20vh;
         overflow: hidden;
-        margin-left: 10rem;
-        margin-top: 0rem;
         animation:
             entry 3s forwards,
             float 3s ease-in-out infinite 3s;
@@ -241,7 +242,7 @@
         background-color: rgba(0, 0, 0, 0.25);
         width: 220px;
         height: 35px;
-        margin-left: 13rem;
+        margin-left: 26vh;
         border-radius: 100%;
         animation:
             shadowEntry 3s forwards,
@@ -344,14 +345,14 @@
 
 //RESPONSIVE
 //CELUS PEQUES
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     .inicio {
-        flex-direction: column-reverse;
+        
         .totoro{
-            margin-left: 7vh;
+            margin: 0;
         }
         .shadow{
-            margin-left: 13vh;
+            margin-left: 0;
         }
     }
 }

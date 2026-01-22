@@ -3,11 +3,15 @@
 
     .inicio-container {
         width: 55%;
-        height: 550px;
+        height: auto;
 
         .inicio-container-titulo {
             width: 90%;
             transform: translate(4rem, 4rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .inicio-container-titulo-nombre {
                 font-family: "Sour Gummy", sans-serif;
@@ -17,6 +21,8 @@
                 font-size: 4.5rem;
                 overflow: hidden;
                 color: var(--bordes);
+                display: flex;
+                justify-content: center;
 
 
 
@@ -27,6 +33,7 @@
                     font-style: italic;
                     font-size: 3rem;
                     color: var(--bordes);
+                    margin: 0 4vh;
 
                     span {
                         font-family: "Meow Script", cursive;
@@ -121,7 +128,7 @@
 
     .inicio-animacion {
         width: 55%;
-        height: 550px;
+        height: auto;
     }
 }
 
@@ -184,11 +191,16 @@
                 margin-left: -5vh;
                 height: auto;
                 margin-bottom: 5vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
                 
 
                 .inicio-container-titulo-nombre {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
                     font-size: 2rem;
                     width: 90%;
                     margin: 0;
@@ -196,6 +208,7 @@
 
                     .estilo-soy {
                         font-size: 2rem;
+                        margin: 0 2vh;
 
                         span {
                             font-size: 2rem;
@@ -222,7 +235,7 @@
             }
 
             .inicio-container-button {
-               margin: 5vh 12vh;
+               margin: 5vh 30%;
                 color: black;
                 font-size: 1rem;
                 width: 50%;
@@ -233,9 +246,11 @@
         }
 
         .inicio-animacion {
-            width: 100%;
-            margin: 0;
-            overflow: hidden;
+            width: 100%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
         }
     }
 }

@@ -203,6 +203,11 @@
             margin: 0;
             height: auto;
             margin: 2vh 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            position: static;
 
             .back {
                 left: 0%;
