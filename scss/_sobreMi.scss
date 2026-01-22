@@ -49,7 +49,7 @@
             .sobreMi-container-texto-cv {
                 position: relative;
                 left: 40%;
-                bottom: 1.8rem;
+                bottom: -1%;
                 height: 40px;
                 width: 180px;
                 border-radius: 10px;
@@ -144,7 +144,7 @@
 
 //RESPONSIVE
 //CELUS PEQUEÑOS
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1366px) {
     .sobreMi {
         .sobreMi-titulo {
             p {
@@ -164,7 +164,7 @@
             .sobreMi-container-texto {
                 width: 100%;
                 overflow: hidden;
-                height: 60vh;
+                height: auto;
                 margin: 0;
                 justify-content: center;
                 align-items: center;
@@ -186,7 +186,7 @@
 
                 .sobreMi-container-texto-cv {
                     overflow: hidden;
-                    margin: 0 -5vh;
+                    margin: 1vh -5vh;
 
                 }
 
@@ -211,4 +211,8 @@
 
 
     }
+}
+//Celus grandes
+@media screen and (max-width:1366px){
+
 }

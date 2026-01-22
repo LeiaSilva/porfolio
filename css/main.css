@@ -364,7 +364,7 @@ header .menu-leaguaje img {
 }
 /*--RESPONSIVE--*/
 /*--CELU PEQUEÑOS--*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   header {
     gap: 4rem;
   }
@@ -586,7 +586,7 @@ header .menu-leaguaje img {
     border-color: transparent;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .inicio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1120,7 +1120,7 @@ header .menu-leaguaje img {
 .sobreMi .sobreMi-container .sobreMi-container-texto .sobreMi-container-texto-cv {
   position: relative;
   left: 40%;
-  bottom: 1.8rem;
+  bottom: -1%;
   height: 40px;
   width: 180px;
   border-radius: 10px;
@@ -1217,7 +1217,7 @@ header .menu-leaguaje img {
             transform: scale(1);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1366px) {
   .sobreMi .sobreMi-titulo p {
     font-size: 1.2rem;
     margin-left: 0.2rem;
@@ -1239,7 +1239,7 @@ header .menu-leaguaje img {
   .sobreMi .sobreMi-container .sobreMi-container-texto {
     width: 100%;
     overflow: hidden;
-    height: 60vh;
+    height: auto;
     margin: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1263,7 +1263,7 @@ header .menu-leaguaje img {
   }
   .sobreMi .sobreMi-container .sobreMi-container-texto .sobreMi-container-texto-cv {
     overflow: hidden;
-    margin: 0 -5vh;
+    margin: 1vh -5vh;
   }
   .sobreMi .sobreMi-container .sobreMi-container-img {
     width: 100%;
@@ -1456,7 +1456,7 @@ header .menu-leaguaje img {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .educacion .educacion-titulo {
     margin-top: 2vh;
     position: relative;
@@ -1627,7 +1627,7 @@ header .menu-leaguaje img {
           transform: rotate(360deg);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .skills .skills-titulo p {
     font-size: 1.2rem;
     margin-left: 0.2rem;
@@ -1891,7 +1891,7 @@ header .menu-leaguaje img {
             transform: translateY(0);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .proyectos .proyectos-titulo {
     margin-top: 2vh;
     position: relative;
@@ -2104,7 +2104,7 @@ header .menu-leaguaje img {
           transform: translateY(-12px) scale(1.02);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .contacto .contacto-titulo p {
     font-size: 1.2rem;
     margin-left: 3vh;
@@ -2169,7 +2169,7 @@ footer p {
   color: var(--bordes);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   footer {
     margin: 0;
   }
@@ -2243,12 +2243,12 @@ footer p {
             transform: scale(1);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   body .modal {
     left: 0;
-    top: 42%;
+    top: 30%;
     width: 100%;
-    height: 65vh;
+    height: 75vh;
   }
   body .modal ion-icon {
     left: 90%;
