@@ -39,13 +39,23 @@ const misProyectos = [
     {
         id: 4,
         titulo: "Tienda de galletas",
-        categoria: "Todos",
-        estado: "EnCurso",
-        descripción: "Trabajando en ello..",
-        imagen: "https://via.placeholder.com/400x300?text=Coming+Soon",
-        link: "#",
-        tecnologias: ["", ""]
+        categoria: "Últimos",
+        estado: "Finalizado",
+        descripción: "Proyecto final del curso de ReactJS. Aplicacion de ventas de galletas, incluyendo el panel de administrador.",
+        imagen: "./assets/ochaScreen.png",
+        link: "https://ochatime.netlify.app/",
+        tecnologias: ["ReactJS"]
     },
+     {
+        id: 6,
+        titulo: "Sitio web de componentes electronicos ",
+        categoria: "Ultimos",
+        estado: "EnCurso",
+        descripción: " Actualmente, trabajo en la construcción de la interfaz y la experiencia de navegación, con especial foco en un catálogo de productos que permite organizar y visualizar los artículos mediante categorías y subcategorías, facilitando su exploración y búsqueda. ",
+        imagen: "./assets/dyceScreen.png",
+        link: "https://catalogodyce.netlify.app/",
+        tecnologias: ["ReactJS", "CSS"]
+    }
 
 
 ];
